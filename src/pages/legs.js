@@ -69,6 +69,7 @@ const Button = styled.button`
   padding: 0.4em 0.8em;
   margin-top: 1em;
   justify-self: flex-end;
+  max-width: 200px;
 `
 
 const SectionLeft = styled.section`
@@ -84,7 +85,7 @@ const LegContainer = styled.div`
 `
 
 const LegText = styled.div`
-  display: flex:
+  display: flex;
   flex-direction: column;
   flex-shrink: 10;
 `
@@ -162,7 +163,7 @@ const Content = ({ tab }) => {
 				<SectionLeft width={90}>
 					<LegContainer>
 						<ImageContainer>
-							<TopImage src="/top.jpg" alt="smiling pilgrims crossing a ford" />
+							<TopImage src="/midland_square.jpg" alt="smiling pilgrims in a field" />
 						</ImageContainer>
 						<LegText>
 							<LegTitle>Midland</LegTitle>
@@ -174,7 +175,7 @@ const Content = ({ tab }) => {
 					<Spacer size={30}></Spacer>
 					<LegContainer>
 						<ImageContainer>
-							<TopImage src="/top.jpg" alt="smiling pilgrims crossing a ford" />
+							<TopImage src="/london-square.jpg" alt="a woman carrying a cross" />
 						</ImageContainer>
 						<LegText>
 							<LegTitle>London</LegTitle>
@@ -186,7 +187,7 @@ const Content = ({ tab }) => {
 					<Spacer size={30}></Spacer>
 					<LegContainer>
 						<ImageContainer>
-							<TopImage src="/top.jpg" alt="smiling pilgrims crossing a ford" />
+							<TopImage src="/essex-square.jpg" alt="smiling pilgrims crossing a ford" />
 						</ImageContainer>
 						<LegText>
 							<LegTitle>Essex</LegTitle>
@@ -198,7 +199,7 @@ const Content = ({ tab }) => {
 					<Spacer size={30}></Spacer>
 					<LegContainer>
 						<ImageContainer>
-							<TopImage src="/top.jpg" alt="smiling pilgrims crossing a ford" />
+							<TopImage src="/northern-square.jpg" alt="people playing string instruments" />
 						</ImageContainer>
 						<LegText>
 							<LegTitle>Northern</LegTitle>
@@ -210,7 +211,7 @@ const Content = ({ tab }) => {
 					<Spacer size={30}></Spacer>
 					<LegContainer>
 						<ImageContainer>
-							<TopImage src="/top.jpg" alt="smiling pilgrims crossing a ford" />
+							<TopImage src="/oxford-square.jpg" alt="a wooden cross bathed in light" />
 						</ImageContainer>
 						<LegText>
 							<LegTitle>Oxford</LegTitle>
@@ -222,11 +223,11 @@ const Content = ({ tab }) => {
 					<Spacer size={30}></Spacer>
 					<LegContainer>
 						<ImageContainer>
-							<TopImage src="/top.jpg" alt="smiling pilgrims crossing a ford" />
+							<TopImage src="/ely-square.jpg" alt="group picture of pilgrims in front of a wooden cross" />
 						</ImageContainer>
 						<LegText>
 							<LegTitle>Ely</LegTitle>
-							<LegStats><p>Days: 7</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</LegStats>
+							<LegStats><p>Days: 3</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</LegStats>
 							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
 							<Button>Sign up now</Button>
 						</LegText>
@@ -234,11 +235,11 @@ const Content = ({ tab }) => {
 					<Spacer size={30}></Spacer>
 					<LegContainer>
 						<ImageContainer>
-							<TopImage src="/top.jpg" alt="smiling pilgrims crossing a ford" />
+							<TopImage src="/easter-square.jpg" alt="children carrying a cross" />
 						</ImageContainer>
 						<LegText>
 							<LegTitle>Easter</LegTitle>
-							<LegStats><p>Days: 7</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</LegStats>
+							<LegStats><p>Days: 1</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</LegStats>
 							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
 							<Button>Sign up now</Button>
 						</LegText>
@@ -259,6 +260,9 @@ const Content = ({ tab }) => {
 				<Spacer size={50}></Spacer>
 				<SectionLeft width={90}>
 					<LegContainer>
+						<ImageContainer>
+							<TopImage src="/peg-square.jpg" alt="man wearing a hat with a cross pinned to it" />
+						</ImageContainer>
 						<LegText>
 							<LegTitle>Peg</LegTitle>
 							<LegStats><p>Days: 5</p><p>Age: all ages but primarily primary school</p> Cost: £305 (adults, children aged 14 and over),
@@ -269,6 +273,9 @@ const Content = ({ tab }) => {
 					</LegContainer>
 					<Spacer size={30}></Spacer>
 					<LegContainer>
+						<ImageContainer>
+							<TopImage src="/wells-square.jpg" alt="children carrying a cross" />
+						</ImageContainer>
 						<LegText>
 							<LegTitle>Wells</LegTitle>
 							<LegStats><p>Days: 5</p><p>Age: all ages but primarily primary school</p> Cost: £290 (adults,£130 (children aged 3+)</LegStats>
@@ -278,6 +285,9 @@ const Content = ({ tab }) => {
 					</LegContainer>
 					<Spacer size={30}></Spacer>
 					<LegContainer>
+						<ImageContainer>
+							<TopImage src="/wensum-square.jpg" alt="a group of teenagers smiling" />
+						</ImageContainer>
 						<LegText>
 							<LegTitle>Wensum</LegTitle>
 							<LegStats><p>Days: 5</p><p>Age: secondary school</p> Cost: £150 (adults), £75 (children aged 12+)</LegStats>
@@ -287,6 +297,9 @@ const Content = ({ tab }) => {
 					</LegContainer>
 					<Spacer size={30}></Spacer>
 					<LegContainer>
+						<ImageContainer>
+							<TopImage src="/easter-square.jpg" alt="children carrying a cross" />
+						</ImageContainer>
 						<LegText>
 							<LegTitle>Easter</LegTitle>
 							<LegStats><p>Days: 1</p><p>Age: all ages but particularly suitable for those with babies</p> Cost: £65 (adults), £35 (children)</LegStats>

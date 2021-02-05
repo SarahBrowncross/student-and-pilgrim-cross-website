@@ -55,7 +55,7 @@ const BulletList = styled.ul`
   }
 `
 
-export default function Home() {
+export default function SCA() {
 	return <Layout>
 		<PageContainer>
 			<Header background={'#F8F4F2'} content={'Financial support to join the pilgrimage'}></Header>
