@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import styled from "styled-components"
-import Layout from "../components/layout"
+import { PageContainer, SectionLeft } from "../components/layout"
+import PageBase from "../components/pageBase"
 import Header from "../components/header"
-
-const PageContainer = styled.main`
-display: flex;
-flex-direction: column;
-align-items: stretch;
-min-height: 100vh;
-`
+import Button from "../components/button"
+import Spacer from "../components/spacer"
+import Aside from "../components/aside"
+import BulletList from '../components/bulletList'
+import { Heading, Subheading } from "../components/headings";
 
 const Tab = styled.button`
 width: 200px;
@@ -21,63 +20,16 @@ cursor: pointer;
 border-top-left-radius: 25px;
 border-top-right-radius: 5px;
 font-weight: 400;
-font-size: 1em;
-background: #F8F4F2;
+background: ${({ pink, theme }) => pink ? theme.pink : '#FFFFFF'};
 `
 
-const TabBody = styled.div`
-background: #F8F4F2;
+const TabBody = styled.section`
+background: ${({ pink, theme }) => pink ? theme.pink : '#FFFFFF'};
 display: flex;
 flex-direction: column;
 align-items: stretch;
 min-height: 100vh;
 padding: 50px;
-`
-
-const Aside = styled.aside`
-  font-weight: 300;
-  font-size: 1em;
-  line-height: 1.6em;
-  border-left: 6px solid #DC182C;
-  padding-left: 25px;
-  max-width: 500px;
-`
-
-const BulletList = styled.ul`
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 1.6em;
-  color: rgba(0, 0, 0, 0.8);
-  margin-left: 50px;
-
-  & li::before {
-    content: "\\2022";  
-    color: #DC182C;
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em; 
-    margin-left: -1em; 
-  }
-`
-
-const Button = styled.button`
-  background-color: #DC182C;
-  color: white;
-  border-radius: 3px;
-  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.35);
-  border: 0;
-  padding: 0.4em 0.8em;
-  margin-top: 1em;
-  justify-self: flex-end;
-  max-width: 200px;
-`
-
-const SectionLeft = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: ${(props) => props.width ?? 50}%;
-  align-self: flex-start;
 `
 
 const LegContainer = styled.div`
@@ -90,27 +42,7 @@ const LegText = styled.div`
   flex-shrink: 10;
 `
 
-const LegTitle = styled.h2`
-font-family: 'Expletus Sans', cursive;
-font-size: 2em;
-`
-
-const LegStats = styled.div`
-font-weight: 400;
-  font-size: 1.1em;
-  line-height: 1.6em;
-  margin: 10px 0px;
-`
-
-const LegBio = styled.p`
-font-weight: 300;
-  font-size: 1em;
-  line-height: 1.6em;
-`
-
-const Spacer = styled.div`
-  height: ${(props) => props.size}px;
-`
+const LegBio = styled.p``
 
 const ImageContainer = styled.div`
   width: 200px;
@@ -134,7 +66,7 @@ const Content = ({ tab }) => {
 						For 2021 we are taking the pilgrimage online with services, reflections, socials and daily activities throughout holy week
 				</Aside>
 					<Spacer size={50}></Spacer>
-					<LegTitle>Virtual Leg</LegTitle>
+					<Heading>Virtual Leg</Heading>
 					<Spacer size={20}></Spacer>
 					<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</LegBio>
 					<Spacer size={20}></Spacer>
@@ -166,8 +98,8 @@ const Content = ({ tab }) => {
 							<TopImage src="/midland_square.jpg" alt="smiling pilgrims in a field" />
 						</ImageContainer>
 						<LegText>
-							<LegTitle>Midland</LegTitle>
-							<LegStats><p>Days: 7</p><p>Starting from: Leicester</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</LegStats>
+							<Heading>Midland</Heading>
+							<Subheading><p>Days: 7</p><p>Starting from: Leicester</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
 							<LegBio>Midland is one of the more relaxed routes. The days are slightly shorter and the cross we carry is lighter although we still sleep in church halls on airbeds. On Midland the liturgy is Catholic including mass most days and an afternoon saying the rosary. We are one of the most sociable groups, having dinner with the parishes we pass through on two nights, and our Wednesday night party with Northern is legendary.</LegBio>
 							<Button>Sign up for Midland</Button>
 						</LegText>
@@ -178,8 +110,8 @@ const Content = ({ tab }) => {
 							<TopImage src="/london-square.jpg" alt="a woman carrying a cross" />
 						</ImageContainer>
 						<LegText>
-							<LegTitle>London</LegTitle>
-							<LegStats><p>Days: 7</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</LegStats>
+							<Heading>London</Heading>
+							<Subheading><p>Days: 7</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
 							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
 							<Button>Sign up now</Button>
 						</LegText>
@@ -190,8 +122,8 @@ const Content = ({ tab }) => {
 							<TopImage src="/essex-square.jpg" alt="smiling pilgrims crossing a ford" />
 						</ImageContainer>
 						<LegText>
-							<LegTitle>Essex</LegTitle>
-							<LegStats><p>Days: 7</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</LegStats>
+							<Heading>Essex</Heading>
+							<Subheading><p>Days: 7</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
 							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
 							<Button>Sign up now</Button>
 						</LegText>
@@ -202,8 +134,8 @@ const Content = ({ tab }) => {
 							<TopImage src="/northern-square.jpg" alt="people playing string instruments" />
 						</ImageContainer>
 						<LegText>
-							<LegTitle>Northern</LegTitle>
-							<LegStats><p>Days: 7</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</LegStats>
+							<Heading>Northern</Heading>
+							<Subheading><p>Days: 7</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
 							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
 							<Button>Sign up now</Button>
 						</LegText>
@@ -214,8 +146,8 @@ const Content = ({ tab }) => {
 							<TopImage src="/oxford-square.jpg" alt="a wooden cross bathed in light" />
 						</ImageContainer>
 						<LegText>
-							<LegTitle>Oxford</LegTitle>
-							<LegStats><p>Days: 7</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</LegStats>
+							<Heading>Oxford</Heading>
+							<Subheading><p>Days: 7</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
 							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
 							<Button>Sign up now</Button>
 						</LegText>
@@ -226,8 +158,8 @@ const Content = ({ tab }) => {
 							<TopImage src="/ely-square.jpg" alt="group picture of pilgrims in front of a wooden cross" />
 						</ImageContainer>
 						<LegText>
-							<LegTitle>Ely</LegTitle>
-							<LegStats><p>Days: 3</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</LegStats>
+							<Heading>Ely</Heading>
+							<Subheading><p>Days: 3</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
 							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
 							<Button>Sign up now</Button>
 						</LegText>
@@ -238,8 +170,8 @@ const Content = ({ tab }) => {
 							<TopImage src="/easter-square.jpg" alt="children carrying a cross" />
 						</ImageContainer>
 						<LegText>
-							<LegTitle>Easter</LegTitle>
-							<LegStats><p>Days: 1</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</LegStats>
+							<Heading>Easter</Heading>
+							<Subheading><p>Days: 1</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
 							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
 							<Button>Sign up now</Button>
 						</LegText>
@@ -264,9 +196,9 @@ const Content = ({ tab }) => {
 							<TopImage src="/peg-square.jpg" alt="man wearing a hat with a cross pinned to it" />
 						</ImageContainer>
 						<LegText>
-							<LegTitle>Peg</LegTitle>
-							<LegStats><p>Days: 5</p><p>Age: all ages but primarily primary school</p> Cost: £305 (adults, children aged 14 and over),
-							£133 (children aged 3-13)</LegStats>
+							<Heading>Peg</Heading>
+							<Subheading><p>Days: 5</p><p>Age: all ages but primarily primary school</p> Cost: £305 (adults, children aged 14 and over),
+							£133 (children aged 3-13)</Subheading>
 							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
 							<Button>Sign up now</Button>
 						</LegText>
@@ -277,8 +209,8 @@ const Content = ({ tab }) => {
 							<TopImage src="/wells-square.jpg" alt="children carrying a cross" />
 						</ImageContainer>
 						<LegText>
-							<LegTitle>Wells</LegTitle>
-							<LegStats><p>Days: 5</p><p>Age: all ages but primarily primary school</p> Cost: £290 (adults,£130 (children aged 3+)</LegStats>
+							<Heading>Wells</Heading>
+							<Subheading><p>Days: 5</p><p>Age: all ages but primarily primary school</p> Cost: £290 (adults,£130 (children aged 3+)</Subheading>
 							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
 							<Button>Sign up now</Button>
 						</LegText>
@@ -289,8 +221,8 @@ const Content = ({ tab }) => {
 							<TopImage src="/wensum-square.jpg" alt="a group of teenagers smiling" />
 						</ImageContainer>
 						<LegText>
-							<LegTitle>Wensum</LegTitle>
-							<LegStats><p>Days: 5</p><p>Age: secondary school</p> Cost: £150 (adults), £75 (children aged 12+)</LegStats>
+							<Heading>Wensum</Heading>
+							<Subheading><p>Days: 5</p><p>Age: secondary school</p> Cost: £150 (adults), £75 (children aged 12+)</Subheading>
 							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
 							<Button>Sign up now</Button>
 						</LegText>
@@ -301,8 +233,8 @@ const Content = ({ tab }) => {
 							<TopImage src="/easter-square.jpg" alt="children carrying a cross" />
 						</ImageContainer>
 						<LegText>
-							<LegTitle>Easter</LegTitle>
-							<LegStats><p>Days: 1</p><p>Age: all ages but particularly suitable for those with babies</p> Cost: £65 (adults), £35 (children)</LegStats>
+							<Heading>Easter</Heading>
+							<Subheading><p>Days: 1</p><p>Age: all ages but particularly suitable for those with babies</p> Cost: £65 (adults), £35 (children)</Subheading>
 							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
 							<Button>Sign up now</Button>
 						</LegText>
@@ -318,7 +250,7 @@ const Content = ({ tab }) => {
 
 export default function Home() {
 	const [tab, setTab] = useState(0);
-	return <Layout>
+	return <PageBase>
 		<PageContainer>
 			<Header content={'The Twelve routes to Walsingham'}></Header>
 			<div>
@@ -328,5 +260,5 @@ export default function Home() {
 			</div>
 			<Content tab={tab}></Content>
 		</PageContainer>
-	</Layout>
+	</PageBase>
 }
