@@ -2,6 +2,7 @@ import React from "react"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import { Helmet } from "react-helmet"
 import theme from "../theme"
+import NavBar from "./navbar"
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -65,6 +66,7 @@ export default function PageBase({ children }) {
 			</Helmet>
 			<GlobalStyle />
 			<ThemeProvider theme={theme}>
+				<NavBar />
 				{children}
 			</ThemeProvider>
 		</>

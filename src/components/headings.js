@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Heading = styled.h2`
   font-family: 'Expletus Sans', cursive;
   font-size: 2em;
+  line-height: 1em;
 `
 
 export const Subheading = styled.h3`

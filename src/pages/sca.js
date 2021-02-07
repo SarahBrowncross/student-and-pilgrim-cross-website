@@ -6,24 +6,29 @@ import Header from "../components/header"
 import Spacer from "../components/spacer"
 import BulletList from "../components/bulletList";
 import { Heading } from "../components/headings";
+import Footer from "../components/footer";
 
 const Text = styled.p`
   font-size: 1.1em;
   margin: 10px 0px;
 `
 
+const Link = styled.a`
+color: ${({ theme }) => theme.red};
+`
+
 export default function SCA() {
 	return <PageBase>
 		<PageContainer>
-			<Header pink content={'Financial support to join the pilgrimage'}></Header>
+			<Header pink content={'Financial support to walk'} src={'support-square.jpg'} alt={'two women hugging'}></Header>
 
-			<Spacer size={50}></Spacer>
+			<Spacer size={30}></Spacer>
 
 			<Row>
 				<SectionLeft width={70}>
-					<Heading>Bursaries Available</Heading>
+					<Heading>Bursaries</Heading>
 					<Text>
-						Generous financial help is available to anyone who needs it to walk Student and Pilgrim Cross through the SCA, our own registered charity. The SCA can subsidise the cost of the pilgrimage and any equipment you might need to walk, such as a sleeping bag or sturdy shoes. To apply for a bursury tick the box asking for SCA support when booking online for Student and Pilgrim Cross and you’ll be contacted by the leader of your preferred route for further details. They'll do the rest.
+						Generous financial help is available to anyone who needs it to walk Student and Pilgrim Cross through the SCA, our own registered charity. The SCA can subsidise the cost of the pilgrimage and any equipment you might need to walk, such as a sleeping bag or sturdy shoes. To apply for a bursary tick the box asking for SCA support on our booking form.
 				</Text>
 					<Text>
 						If your financial circumstances change after booking and you need help, you can still ask your leg leader about a bursary at any time before or during the pilgrimage.
@@ -40,16 +45,19 @@ export default function SCA() {
 						</Text>
 					<BulletList>
 						<li>
-							<b>Fixed grants:</b> These are given annually to help unwaged or low waged pilgrims. The amount given is determined each year by the SCA based on available funds and acts as a subsidy to the full cost of the walk for unwaged/low waged pilgrims*. The SCA also gives grants to families who need financial help to take part in a family leg of Student and Pilgrim Cross. All grants are made on behalf of qualifying pilgrims directly to their leg, allowing the leg to charge lower fees for unwaged and low-waged pilgrims.
+							<b>Fixed grants:</b> These are given annually to help unwaged or low waged pilgrims. The amount is based on the funds available and subsidises the cost of the walk for unwaged/low waged pilgrims. The SCA also gives <Link href='/family-support'>grants to families</Link> who need financial help to take part in a family leg. All grants are made on behalf of qualifying pilgrims directly to their leg, allowing the leg to charge lower fees for unwaged and low-waged pilgrims.
 							</li>
 						<li>
-							<b>Direct bursaries:</b> Individual pilgrims can apply (via their leg leader) for this extra bursary. It can help with things like travel costs to and from Student and Pilgrim Cross pilgrimages, meeting the cost of necessary equipment such as sleeping bags or waterproofs, or in special cases, meeting the total cost of the walk for students or unwaged pilgrims. If accepted, the bursary will be made on the individual pilgrim's behalf to their leg.
+							<b>Direct bursaries:</b> Individual pilgrims can apply for this extra bursary. It can help with things like travel costs to and from Student and Pilgrim Cross pilgrimages, meeting the cost of equipment such as sleeping bags or waterproofs or, in special cases, meeting the total cost of the walk for students or unwaged pilgrims. If accepted, the bursary will be made on the individual pilgrim's behalf to their leg.
 						</li>
 					</BulletList>
 					<Spacer size={50}></Spacer>
+					<Link href='/fundraising'>Find out more about regular giving and fundraising</Link>
+					<Link href='/sca-committee'>Find out more about SCA reports, committee and contacts</Link>
+
 				</SectionLeft>
 			</Row>
-
+			<Footer></Footer>
 		</PageContainer>
 	</PageBase >
 }

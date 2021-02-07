@@ -14,6 +14,11 @@ export const Row = styled.section`
   padding: 50px;
   justify-content: space-between;
   background: ${({ pink, theme }) => pink ? theme.pink : '#FFFFFF'};
+
+  @media (max-width: 768px){
+    flex-direction: column;
+    padding: 10px;
+  }
 `
 
 export const SectionLeft = styled.section`
@@ -22,6 +27,11 @@ export const SectionLeft = styled.section`
   align-items: flex-start;
   width: ${(props) => props.width ?? 50}%;
   align-self: flex-start;
+
+  @media (max-width: 768px){
+    width: 100%;
+    padding: 30px 0;
+  }
 `
 
 export const SectionRight = styled.section`
@@ -29,4 +39,9 @@ export const SectionRight = styled.section`
   flex-direction: column;
   align-items: flex-end;
   width: 50%;
+
+  @media (max-width: 768px){
+    width: 100%;
+    padding: 30px 0;
+  }
 `

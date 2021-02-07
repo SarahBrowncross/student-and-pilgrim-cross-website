@@ -7,6 +7,7 @@ const Aside = styled.aside`
   & b{
     font-weight: 400;
   }
+}
 `
 
 export default Aside;

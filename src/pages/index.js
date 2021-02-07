@@ -1,17 +1,22 @@
 import React from "react";
 import styled from "styled-components"
 import PageBase from "../components/pageBase"
-import Header from "../components/header"
+import MainPageHeader from "../components/mainPageheader"
 import Button from "../components/button";
 import { PageContainer, SectionLeft, Row, SectionRight } from "../components/layout";
 import Aside from "../components/aside";
 import BulletList from "../components/bulletList";
 import NavBar from "../components/navbar";
+import Footer from "../components/footer";
 
 const HomeBulletList = styled(BulletList)`
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
 `
+
+const Link = ({ children, href = '#', className }) => (
+  <a href={href} className={className}>{children}</a>
+);
 
 const HomeAside = styled(Aside)`
   font-size: 1.2em;
@@ -34,7 +39,7 @@ const Cite = styled.cite`
 export default function Home() {
   return <PageBase>
     <PageContainer>
-      <Header pink content={'An Easter walking Pilgrimage to Walsingham'}></Header>
+      <MainPageHeader pink content={'An Easter walking Pilgrimage to Walsingham'} src={'top.jpg'}></MainPageHeader>
 
       <Row>
         <SectionLeft>
@@ -53,7 +58,7 @@ export default function Home() {
           <HomeAside>
             During the pilgrimage we walk, eat, sleep and pray <b>in community</b>
           </HomeAside>
-          <Button>Find out more</Button>
+          <Button href='/about'>Find out more</Button>
         </SectionLeft>
         <SectionRight>
           <Quote>
@@ -71,7 +76,9 @@ export default function Home() {
           <HomeAside>
             There are <b>12 groups</b>, or legs, each starting from a different point and each with their <b>own unique character</b>
           </HomeAside>
-          <Button>Choose a Leg</Button>
+          <Button href='/legs' >
+            Choose a Leg
+          </Button>
         </SectionRight>
       </Row>
 
@@ -80,12 +87,12 @@ export default function Home() {
           <HomeAside>
             We want everyone to be able to walk regardless of their financial situation. <b>Bursaries are available</b> to cover the cost of the pilgrimage and any equipment you might need.
           </HomeAside>
-          <Button>Find out more</Button>
+          <Button href='/sca'>Find out more</Button>
         </SectionLeft>
         <SectionRight>
         </SectionRight>
       </Row>
-
+      <Footer></Footer>
     </PageContainer >
   </PageBase>
 }

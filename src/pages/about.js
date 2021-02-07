@@ -6,6 +6,7 @@ import Header from "../components/header"
 import Spacer from "../components/spacer"
 import Aside from "../components/aside"
 import { Heading, Subheading } from "../components/headings";
+import Footer from "../components/footer";
 
 const Answer = styled.p`
   display: flex;
@@ -15,7 +16,7 @@ const Answer = styled.p`
 export default function About() {
 	return <PageBase>
 		<PageContainer>
-			<Header pink content={'What is it like to walk Student and Pilgrim Cross?'}></Header>
+			<Header pink content={'What is Student and Pilgrim Cross?'} src={'about-square.jpg'} alt={'pilgrims crossing a bridge'}></Header>
 			<Spacer size={30}></Spacer>
 			<Row>
 				<SectionLeft width={70}>
@@ -34,20 +35,20 @@ export default function About() {
 					<Heading>
 						Frequently Asked Questions
 					</Heading>
-					<Subheading>What is the accomodation?</Subheading>
-					<Answer></Answer>
+					<Subheading>Where will I be sleeping?</Subheading>
+					<Answer>Different routes have different types of accomodation. The adult walking legs and Wensum sleep in church halls on airbeds on the floor. The family legs for younger children stay in youth hostels. When we arrive in Walsingham we stay at the Pilgrim Bureau.</Answer>
 					<Spacer size={30}></Spacer>
 					<Subheading>What gear do I need?</Subheading>
 					<Answer>As long as you've got a waterproof, a sleeping bag, a mat or airbed and some trainers, you'll be alright. No specialist equipment is needed.</Answer>
 					<Spacer size={30}></Spacer>
 					<Subheading>How far is it?</Subheading>
-					<Answer>Most groups walk 120 miles. It's easier than you think - there's lots of stops and walking with a group provides a great boost. Your luggage is taken in a car and if it gets too much, so are you.</Answer>
+					<Answer>The adult legs walk around 15 to 20 miles a day. The family legs walk between 5 and 10 miles a day. It's easier than you think - there's lots of stops and walking with a group provides a great boost. Your luggage is taken in a car and if it gets too much, so are you.</Answer>
 					<Spacer size={30}></Spacer>
 					<Subheading>Do I need to be really fit?</Subheading>
 					<Answer>Many confirmed couch potatoes have completed the walk without much difficulty. However, some preparation can be helpful. As little as two weeks' preparation with simple stretches and exercises would enable you to tackle the week.</Answer>
 					<Spacer size={30}></Spacer>
 					<Subheading>How much does it cost?</Subheading>
-					<Answer>Costs vary, though students and the unwaged can expect to pay between £30 and £65. This covers all your food and accommodation for the week. The only other extras you have to find are money for drinks and about £15 for a coach back from Walsingham. Financial support towards the cost of the pilgrimage is available from the Student Cross Association - please ask for further details.</Answer>
+					<Answer>Our costs are income based and range from £30 to £200. This covers all your food and accommodation for the week. The only other extras you have to find are money for drinks and about £20 for a coach back from Walsingham. Financial support towards the cost of the pilgrimage is available.</Answer>
 					<Spacer size={30}></Spacer>
 					<Subheading>What if I don't know anyone?</Subheading>
 					<Answer>Don't worry, you soon will. Previous walkers are very keen to meet new faces and there will be other people in the same boat as yourself. Many very strong friendships are formed during the week.</Answer>
@@ -57,7 +58,7 @@ export default function About() {
 					<Spacer size={30}></Spacer>
 				</SectionLeft>
 			</Row>
-
+			<Footer></Footer>
 		</PageContainer>
 	</PageBase>
 }
