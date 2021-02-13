@@ -65,7 +65,7 @@ const Footer = () => (
 	<>
 		<FooterBase>
 			<Logo href='/'>S&PX</Logo>
-			<SCAtext>Student Cross is supported by the Student Cross Association Registered Charity number 1019313</SCAtext>
+			<SCAtext>Student and Pilgrim Cross is supported by the Student Cross Association Registered Charity number 1019313</SCAtext>
 			<Links>
 				<Link href="/data-policy">Data policy</Link>
 				<Link href="/safeguarding">Safeguarding</Link>
