@@ -60,6 +60,9 @@ const LegTitle = styled(Heading)`
 	align-self: center;
 }
 `
+const Link = styled.a`
+color: ${({ theme }) => theme.red};
+`
 
 const LegText = styled.div`
   display: flex;
@@ -84,6 +87,10 @@ const ImageContainer = styled.div`
 }
 `
 
+const VirtualImageContainer = styled(ImageContainer)`
+align-self: center;
+`
+
 const TopImage = styled.img`
   height: 200px;
 `
@@ -92,22 +99,85 @@ const Content = ({ tab }) => {
 	if (tab === 0) {
 		return <>
 			<TabBody>
-				<SectionLeft>
+				<SectionLeft width={70}>
 					<Aside>
 						For 2021 we are taking the pilgrimage online with services, reflections, socials and daily activities throughout holy week
 				</Aside>
 					<Spacer size={50}></Spacer>
-					<LegTitle>Virtual Leg</LegTitle>
+
+					<LegTitle>Virtual pilgrimage</LegTitle>
+					<Subheading><p>Days: 7</p><p>Starting from: Your living room</p><p>Length: 0 miles</p> Cost: Free</Subheading>
+					<LegBio>We cannot be together in person again this year so we're building on the success of our 2020 virtual pilgrimage and taking Student and Pilgrim Cross online. Every day from Saturday 27 March to Holy Saturday we'll be hosting a daily liturgy led by one of our route groups on zoom. We'll also be broadcasting a programme of reflections offered by our pilgrims across the UK. Both are available live or to catch up on later. On Easter Sunday there will be an evening liturgy to celebrate Easter followed by our usual party - get working on your acts now!<br /><br />On top of that, some of our groups are running their own schedule of social events and liturgy during the week to keep the community spirit of Student and Pilgrim Cross alive! You can choose a leg to join in with or just sign up to the central events. Sign up to get the full schedule and links for everything, or keep reading to find out what each group is offering.</LegBio>
+					<Button href="https://docs.google.com/forms/d/e/1FAIpQLSe-inT8C5JXlI3HaByn1Phi7xhj1Q6XE9z_968u4cNbVvQeGw/viewform">Sign up as an adult</Button>
+					<Button href="https://docs.google.com/forms/d/e/1FAIpQLSdkBSF9bwryZK2zlPTlqXITCUfrjUnhNvwzAGwPmcLG_HoFiA/viewform">Sign up as a family</Button>
 					<Spacer size={20}></Spacer>
-					<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</LegBio>
-					<Spacer size={20}></Spacer>
-					<BulletList>
-						<li>Activity 1</li>
-						<li>Activity 2</li>
-						<li>Activity 3</li>
-						<li>Activity 4</li>
-					</BulletList>
-					<Button>Sign up now</Button>
+					<VirtualImageContainer>
+						<TopImage src="/virtual-square.jpg" alt="people holding up candles on a video call" />
+					</VirtualImageContainer>
+					<Spacer size={30}></Spacer>
+					<LegText>
+						<LegTitle>Essex</LegTitle>
+						<Spacer size={10}></Spacer>
+						<LegBio>Although we can't be trekking through the stunning Norfolk countryside this year, we're still providing a mix of prayer, services and, of course, socials! We'll have pre-recorded morning prayer every day that you can watch at the best time for you and an adapted version of our Map service where we can unite though spread across the country. We'll have plenty of evening social time, including a quiz, with night prayer each evening at 9pm. As a leg we'll be doing the Maundy Thursday service for the whole pilgrimage. We'd love to have people old and new involved, and hope what we do will give you an insight into Essex!</LegBio>
+					</LegText>
+					<Spacer size={30}></Spacer>
+					<LegText>
+						<LegTitle>Northern</LegTitle>
+						<Spacer size={10}></Spacer>
+						<LegBio>Join us for a Holy Week of community, prayer and inspiration. Northern will be meeting on zoom for liturgy and for social events. We welcome people from different church traditions, and those who are exploring faith. Typically our liturgy is fresh and creative. We hope the week will be a safe space for doubts, questions, and sharing struggles. There will also be lots of space for fun. Through the week we will gather for a quiz, a party-piece evening, and every evening for informal chat. So come and give us a try, you will be welcome.
+
+						Find out more <Link href='northernpilgrim.org/holyweek2021/'>here</Link>.  </LegBio>
+					</LegText>
+					<Spacer size={30}></Spacer>
+					<LegText>
+						<LegTitle>London</LegTitle>
+						<Spacer size={10}></Spacer>
+						<LegBio>London leg would like to invite you to journey with us through Holy week, and become part of a community that enjoys plenty of music, liturgy and laughter. We will virtually follow our traditional route from Epping to Walsingham, with a mixture of liturgy and socials in the evenings, and an active WhatsApp group to help get you through the time in between. You might even get some merch in the post to accompany our remote pilgrimage. </LegBio>
+					</LegText>
+					<Spacer size={30}></Spacer>
+					<LegText>
+						<LegTitle>Oxford</LegTitle>
+						<Spacer size={10}></Spacer>
+						<LegBio>Oxford will start with a Blessing of Crosses on Friday evening and a trip to our virtual pub for a quiz night.
+
+						Our regular Oxford meetings will be at 6pm, usually using the Office of Readings. We have traditional Palm Sunday activities planned and socials including 'Bible Show and Tell', Film Night, an Oxford themed quiz.
+
+						On Maundy Thursday we will share in a virtual 'Love Feast' service. On Good Friday, after the reading of the Passion we hope to meet up with fellow pilgrims from other groups, much as we would in Walsingham. During Easter weekend we will be with Student and Pilgrim Cross as a whole, with a closing gathering before our pilgrimage ends.
+</LegBio>
+					</LegText>
+					<Spacer size={30}></Spacer>
+					<LegText>
+						<LegTitle>Peg</LegTitle>
+						<Spacer size={10}></Spacer>
+						<LegBio>Peg is one of the family legs and we seek to enable children and parents to explore, enjoy and grow together.
+
+						In addition to Student and Pilgrim Cross liturgy and events, Peg Leg will also have a family-orientated offering. This includes children’s liturgies and evening prayer, parents’ evening prayers and socials, as well as arts and crafts for children to do with parents in their own time.
+
+						This year, we are mindful that many children and parents will be at school or working during Holy Week, so events will be taking place at the weekends and some weekday evenings.
+
+						Please note that there will be a small charge per family to cover the costs of arts and crafts, printing and postage.
+
+					</LegBio>
+					</LegText>
+					<Spacer size={30}></Spacer>
+					<LegText>
+						<LegTitle>Wells</LegTitle>
+						<Spacer size={10}></Spacer>
+						<LegBio>Wells Leg is mostly (but not exclusively) a group of families, usually with children ranging from babies up to early teens.
+						
+						Over this Holy Week, we are planning to provide some optional daytime activities for kids (recognising that many will be at school during Holy Week) and a short kids evening prayer each evening. We will also have adult evening prayers for Palm Sunday, Good Friday, and Holy Saturday, with some social time afterwards for those that want to stay on.
+						
+					</LegBio>
+					</LegText>
+					<Spacer size={30}></Spacer>
+					<LegText>
+						<LegTitle>Easter</LegTitle>
+						<Spacer size={10}></Spacer>
+						<LegBio>Easter will be delivering the Liturgy on Monday 29 March for the whole of Student and Pilgrim Cross.  
+
+						We are planning a service on Maundy Thursday evening for when we usually meet up with time for socialising after the service! Arrangements will be made for an A.G.M.
+					</LegBio>
+					</LegText>
 				</SectionLeft>
 
 			</TabBody>
@@ -118,9 +188,10 @@ const Content = ({ tab }) => {
 			<TabBody>
 				<SectionLeft>
 					<Aside>
-						We have 7 routes, or legs, for adults, each with its own character and flavour. Choose the leg that appeals to you or sign up for any leg and we'll place you on one.
+						We have 7 routes, or legs, for adults, each with its own character and flavour. Choose the leg that appeals to you or sign up for any leg and we'll place you on one.<br/><br/>
+						<b>Student and Pilgrim Cross has gone virtual for 2021! Check our virtual tab for this year's offering.</b>
 				</Aside>
-					<Button>Sign up for any leg</Button>
+					<Button href="https://docs.google.com/forms/d/e/1FAIpQLSe-inT8C5JXlI3HaByn1Phi7xhj1Q6XE9z_968u4cNbVvQeGw/viewform">Sign up now</Button>
 				</SectionLeft>
 				<Spacer size={50}></Spacer>
 				<SectionLeft width={90}>
@@ -130,9 +201,8 @@ const Content = ({ tab }) => {
 						</ImageContainer>
 						<LegText>
 							<LegTitle>Midland</LegTitle>
-							<Subheading><p>Days: 7</p><p>Starting from: Leicester</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
+							<Subheading><p>Days: 7</p><p>Starting from: Leicester</p><p>Length: 120 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
 							<LegBio>Midland is one of the more relaxed routes. The days are slightly shorter and the cross we carry is lighter although we still sleep in church halls on airbeds. On Midland the liturgy is Catholic including mass most days and an afternoon saying the rosary. We are one of the most sociable groups, having dinner with the parishes we pass through on two nights, and our Wednesday night party with Northern is legendary.</LegBio>
-							<Button>Sign up for Midland</Button>
 						</LegText>
 					</LegContainer>
 					<Spacer size={30}></Spacer>
@@ -142,9 +212,11 @@ const Content = ({ tab }) => {
 						</ImageContainer>
 						<LegText>
 							<LegTitle>London</LegTitle>
-							<Subheading><p>Days: 7</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
-							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
-							<Button>Sign up now</Button>
+							<Subheading><p>Days: 7</p><p>Length: 120 miles</p> Cost: £190 (waged)/£100 (low waged)/£60 (unwaged)</Subheading>
+							<LegBio>Mostly off-road, London’s walk will take you across flat country, beside rivers and alongside main roads.
+							Accommodation through the week varies. Often called the most luxurious walk (albeit still a challenge),
+							London offers you a shower, a night in real beds and lots of cake! Accompanied by a Catholic chaplain, our route is a great mix of Catholic, Anglican and Methodist. A musical bunch, our songs reflect the typical London Pride with many witty ditties both sacred and profane.
+</LegBio>
 						</LegText>
 					</LegContainer>
 					<Spacer size={30}></Spacer>
@@ -154,9 +226,10 @@ const Content = ({ tab }) => {
 						</ImageContainer>
 						<LegText>
 							<LegTitle>Essex</LegTitle>
-							<Subheading><p>Days: 7</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
-							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
-							<Button>Sign up now</Button>
+							<Subheading><p>Days: 7</p><p>Length: 120 miles</p> Cost: £145 (waged)/£100 (low waged)/£55 (unwaged)</Subheading>
+							<LegBio>Essex is the most coastal route, taking in the sights of sea, sand, an ice cream stop, two ferries and a bus. One of the more diverse and ecumenical groups – our current walkers include Catholics, Anglicans and Methodists which provides for a more diverse and open liturgy style. Though our nights are the usual airbeds in halls, we do have two opportunities for showers midweek. Every day finishes with a delicious hot evening meal prepared by local parishioners, and we do very well for cooked breakfasts too!
+
+							</LegBio>
 						</LegText>
 					</LegContainer>
 					<Spacer size={30}></Spacer>
@@ -166,9 +239,9 @@ const Content = ({ tab }) => {
 						</ImageContainer>
 						<LegText>
 							<LegTitle>Northern</LegTitle>
-							<Subheading><p>Days: 7</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
-							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
-							<Button>Sign up now</Button>
+							<Subheading><p>Days: 7</p><p>Length: 120 miles</p> Cost: £190 (waged)/£100 (low waged)/£50 (unwaged)</Subheading>
+							<LegBio>Walking mostly on quiet country roads, Northern spend their time on the road talking to each other, with conversation topics ranging from the substantial and serious to the sublimely silly. We welcome people from a range of different church traditions, and those who are open to and exploring questions of faith. We mostly sleep on church hall floors so a sleeping bag and floor mat are essential. We spend many of our evenings in pubs, and often sing and play music together. We even boast a set of kazoos!
+							</LegBio>
 						</LegText>
 					</LegContainer>
 					<Spacer size={30}></Spacer>
@@ -178,9 +251,9 @@ const Content = ({ tab }) => {
 						</ImageContainer>
 						<LegText>
 							<LegTitle>Oxford</LegTitle>
-							<Subheading><p>Days: 7</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
-							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
-							<Button>Sign up now</Button>
+							<Subheading><p>Days: 7</p><p>Length: 120 miles</p> Cost: £150 (waged)/£80 (low waged)/£50 (unwaged)</Subheading>
+							<LegBio>The Oxford route is a bit like our journey with Christ - it may not be the most direct, but you get there in the end. We are quite traditional; sharing services with parishioners, praying the rosary together and opportunities for personal reflection. Just one night of our week we spend with parishioners, the rest of it is just us. We pray, cook, eat, sleep and laugh together!
+							</LegBio>
 						</LegText>
 					</LegContainer>
 					<Spacer size={30}></Spacer>
@@ -190,9 +263,9 @@ const Content = ({ tab }) => {
 						</ImageContainer>
 						<LegText>
 							<LegTitle>Ely</LegTitle>
-							<Subheading><p>Days: 3</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
-							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
-							<Button>Sign up now</Button>
+							<Subheading><p>Days: 3</p><p>Length: 60 miles</p> Cost: £150 (waged)/£75 (low waged)/£50 (unwaged)</Subheading>
+							<LegBio>Ely has a shorter route than most, making it ideal for those unable to walk for the whole week. Meeting on the Tuesday before Easter, we walk for three days; one day off-road and two days on. Started by an Anglican and a Catholic, we have always had quite an ecumencial and open feeling to our group. Ely enjoys not only the widest age range of walkers, but also arguably the most diverse.
+							</LegBio>
 						</LegText>
 					</LegContainer>
 					<Spacer size={30}></Spacer>
@@ -202,9 +275,9 @@ const Content = ({ tab }) => {
 						</ImageContainer>
 						<LegText>
 							<LegTitle>Easter</LegTitle>
-							<Subheading><p>Days: 1</p><p>Length: 130 miles</p> Cost: £150 (waged)/£70 (low waged)/£50 (unwaged)</Subheading>
-							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
-							<Button>Sign up now</Button>
+							<Subheading><p>Days: 1</p><p>Length: 120 miles</p> Cost: £65 (waged)/£35 (low or unwaged)</Subheading>
+							<LegBio>Easter meet up in Walsingham on Thursday evening to celebrate Mass of the Last Supper, and walk the 12miles from Wells to Walsingham the next day. The small amount of time together does not stop us from forming great friendships, having a good sing song and time for group reflection. Walkers on Easter arrange their own accommodation and travel. The fee goes towards the cost of two main meals, the Chaplain, the GOD fund and other general expenses. This group is for everyone, from those with young children or limited mobility to work commitments, all are welcome!
+</LegBio>
 						</LegText>
 					</LegContainer>
 					<Spacer size={30}></Spacer>
@@ -217,8 +290,10 @@ const Content = ({ tab }) => {
 			<TabBody>
 				<SectionLeft>
 					<Aside>
-						We have 4 routes, or legs, for families with children of different ages. Choose the leg that fits your family.
+						We have 4 routes, or legs, for families with children of different ages. Choose the leg that fits your family.<br/><br/>
+						<b>Student and Pilgrim Cross has gone virtual for 2021! Check our virtual tab for this year's offering.</b>
 				</Aside>
+				<Button href="https://docs.google.com/forms/d/e/1FAIpQLSdkBSF9bwryZK2zlPTlqXITCUfrjUnhNvwzAGwPmcLG_HoFiA/viewform">Sign up now</Button>
 				</SectionLeft>
 				<Spacer size={50}></Spacer>
 				<SectionLeft width={90}>
@@ -230,8 +305,8 @@ const Content = ({ tab }) => {
 							<LegTitle>Peg</LegTitle>
 							<Subheading><p>Days: 5</p><p>Age: all ages but primarily primary school</p> Cost: £305 (adults, children aged 14 and over),
 							£133 (children aged 3-13)</Subheading>
-							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
-							<Button>Sign up now</Button>
+							<LegBio>The oldest family leg, Peg contains all the elements of a pilgrimage with a twist. Our cross, walking distance, accommodation and liturgy is more aimed at our younger members. We spend our time doing a range of activities including crafts, egg rolling, making an Easter garden, and other child friendly activities such as swimming and go-karting (over 10’s only). Our group is mostly made up of previous Student Cross walkers who now bring their own children along, but for others Peg Leg has been their first experience of Student Cross.
+							</LegBio>
 						</LegText>
 					</LegContainer>
 					<Spacer size={30}></Spacer>
@@ -242,8 +317,8 @@ const Content = ({ tab }) => {
 						<LegText>
 							<LegTitle>Wells</LegTitle>
 							<Subheading><p>Days: 5</p><p>Age: all ages but primarily primary school</p> Cost: £290 (adults,£130 (children aged 3+)</Subheading>
-							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
-							<Button>Sign up now</Button>
+							<LegBio>A family pilgrimage based in Wells-next-the-Sea, we walk every day covering distances suitable for young children and three-wheel buggies. The rest of our days are filled with other activities including craft, the beach, swimming, the steam train, and Easter activities with the local Parish over the road. Our liturgy caters for everyone in your family: adult, baby, child or teenager. We enjoy many things you may expect from walking other parts of Student Cross. These included, but are not limited to: the beach, local countryside, cake, beer, cheese and whisky.
+							</LegBio>
 						</LegText>
 					</LegContainer>
 					<Spacer size={30}></Spacer>
@@ -254,8 +329,8 @@ const Content = ({ tab }) => {
 						<LegText>
 							<LegTitle>Wensum</LegTitle>
 							<Subheading><p>Days: 5</p><p>Age: secondary school</p> Cost: £150 (adults), £75 (children aged 12+)</Subheading>
-							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
-							<Button>Sign up now</Button>
+							<LegBio>The next step up. Though Wensum may be aimed at children of secondary school age and their parents/guardians, we are not to be underestimated. Walking 8-12 miles a day, our route is a mixture of quiet roads and muddy footpaths. Our pilgrimage looks pretty much like everyone else's, with the typical: walking, cross carrying, liturgy, music, humour, discussion, camaraderie, church hall floors and most importantly cake. From pilgrims well-versed in the pilgrimage and their children, to new families who want to join the community, Wensum welcomes all!
+							</LegBio>
 						</LegText>
 					</LegContainer>
 					<Spacer size={30}></Spacer>
@@ -265,9 +340,9 @@ const Content = ({ tab }) => {
 						</ImageContainer>
 						<LegText>
 							<LegTitle>Easter</LegTitle>
-							<Subheading><p>Days: 1</p><p>Age: all ages but particularly suitable for those with babies</p> Cost: £65 (adults), £35 (children)</Subheading>
-							<LegBio>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</LegBio>
-							<Button>Sign up now</Button>
+							<Subheading><p>Days: 1</p><p>Age: all ages but particularly suitable for those with babies</p> Cost: £65 (adults), £35 (children over 5)</Subheading>
+							<LegBio>Easter meet up in Walsingham on Thursday evening to celebrate Mass of the Last Supper, and walk the 12miles from Wells to Walsingham the next day. The small amount of time together does not stop us from forming great friendships, having a good sing song and time for group reflection. Walkers on Easter arrange their own accommodation and travel. The fee goes towards the cost of two main meals, the Chaplain, the GOD fund and other general expenses. This group is for everyone, from those with young children or limited mobility to work commitments, all are welcome!
+							</LegBio>
 						</LegText>
 					</LegContainer>
 					<Spacer size={30}></Spacer>
@@ -283,7 +358,7 @@ export default function Home() {
 	const [tab, setTab] = useState(0);
 	return <PageBase>
 		<PageContainer>
-			<Header content={'The twelve routes to Walsingham'} src={'legs-square.jpg'} alt={'pilgrims crossing a field'}></Header>
+			<Header content={'The twelve routes to Walsingham'} src={'/legs-square.jpg'} alt={'pilgrims crossing a field'}></Header>
 			<div>
 				<Tab onClick={() => setTab(0)} active={tab === 0}>Virtual for 2021</Tab>
 				<Tab onClick={() => setTab(1)} active={tab === 1}>For Adults</Tab>

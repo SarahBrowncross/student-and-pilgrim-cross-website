@@ -24,7 +24,7 @@ line-height:1.4em;
 export default function Contact() {
 	return <PageBase>
 		<PageContainer>
-			<Header content={'Get in touch'} src={'contact-square.jpg'} alt={'woman holding a cup of tea and cake'}></Header>
+			<Header content={'Get in touch'} src={'/contact-square.jpg'} alt={'woman holding a cup of tea and cake'}></Header>
 			<Row pink>
 				<SectionLeft width={'80%'}>
 					<Heading>Mailing list</Heading>

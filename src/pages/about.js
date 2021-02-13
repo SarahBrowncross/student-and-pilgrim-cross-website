@@ -16,7 +16,7 @@ const Answer = styled.p`
 export default function About() {
 	return <PageBase>
 		<PageContainer>
-			<Header pink content={'What is Student and Pilgrim Cross?'} src={'about-square.jpg'} alt={'pilgrims crossing a bridge'}></Header>
+			<Header pink content={'What is Student and Pilgrim Cross?'} src={'/about-square.jpg'} alt={'pilgrims crossing a bridge'}></Header>
 			<Spacer size={30}></Spacer>
 			<Row>
 				<SectionLeft width={70}>

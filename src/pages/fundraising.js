@@ -20,7 +20,7 @@ color: ${({ theme }) => theme.red};
 export default function SCA() {
 	return <PageBase>
 		<PageContainer>
-			<Header pink content={'Fundraising and regular giving'} src={'support-square.jpg'} alt={'two women hugging'}></Header>
+			<Header pink content={'Fundraising and regular giving'} src={'/support-square.jpg'} alt={'two women hugging'}></Header>
 
 
 			<Row>

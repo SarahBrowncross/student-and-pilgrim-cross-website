@@ -19,7 +19,7 @@ color: ${({ theme }) => theme.red};
 export default function Contact() {
 	return <PageBase>
 		<PageContainer>
-			<Header content={'Policy regarding the safety of young pilgrims'} src={'bible-square.jpg'} alt={'open bible'}></Header>
+			<Header content={'Policy regarding the safety of young pilgrims'} src={'/bible-square.jpg'} alt={'open bible'}></Header>
 			<Row pink>
 				<SectionLeft width={'70'}>
 					<Text>This document has been drawn up with reference to:</Text>

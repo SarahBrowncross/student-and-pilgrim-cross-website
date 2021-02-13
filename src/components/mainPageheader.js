@@ -98,7 +98,7 @@ export default function MainPageHeader({ pink, content, src }) {
         <HeaderSectionLeft>
           <MainHeader>Student <MainHeaderRed>and Pilgrim </MainHeaderRed>Cross</MainHeader>
           <Tagline>{content}</Tagline>
-          <Button>Walk with us</Button>
+          <Button href='/legs'>Walk with us</Button>
         </HeaderSectionLeft>
         <HeaderSectionRight>
           <ImageContainer src={src} />

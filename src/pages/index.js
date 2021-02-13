@@ -64,7 +64,7 @@ export default function Home() {
           <Quote>
             My most valued friendships were made on Student and Pilgrim Cross.
         </Quote>
-          <Cite>- Alice Pilgrim</Cite>
+          <Cite>- Laura, pilgrim</Cite>
 
         </SectionRight>
       </Row>
@@ -77,7 +77,7 @@ export default function Home() {
             There are <b>12 groups</b>, or legs, each starting from a different point and each with their <b>own unique character</b>
           </HomeAside>
           <Button href='/legs' >
-            Choose a Leg
+            Choose a Group
           </Button>
         </SectionRight>
       </Row>

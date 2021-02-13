@@ -111,7 +111,7 @@ const NavBar = () => {
 					<Link href="/sca">Bursaries</Link>
 					<Link href="/news">News</Link>
 				</Links>
-				<CTA>Walk with us</CTA>
+				<CTA href="/legs">Walk with us</CTA>
 				<BurgerDiv>
 					<Burger open={open} setOpen={setOpen}></Burger>
 					<Menu open={open} setOpen={setOpen}></Menu>

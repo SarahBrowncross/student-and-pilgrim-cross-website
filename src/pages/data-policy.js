@@ -18,7 +18,7 @@ color: ${({ theme }) => theme.red};
 export default function Contact() {
 	return <PageBase>
 		<PageContainer>
-			<Header content={'Data and privacy policy'} src={'bible-square.jpg'} alt={'open bible'}></Header>
+			<Header content={'Data and privacy policy'} src={'/bible-square.jpg'} alt={'open bible'}></Header>
 			<Row pink>
 				<SectionLeft width={'70'}>
 					<Text>The organisers, leaders and officers of the Student and Pilgrim Cross pilgrimage - including the Student Cross Association (SCA) - recognise and treat as serious and important the privacy of all those who take part in the pilgrimage and communicate with us at any time.<br /><br />
@@ -29,9 +29,9 @@ export default function Contact() {
 
 					The main principle used in all interactions is that your personal data is only gathered and used for the purpose for which it is intended. We will not sell, license or trade your personal information to others, including direct marketing companies or other such organisations or businesses.<br /><br />
 
-					The management and use of personal information is carried out within current UK and EU data protection laws. This policy has been developed to take account of the use of digital technology but it is subject to change and any such changes may only be notified within this policy.<br /><br />
+					The management and use of personal information is carried out within current UK data protection laws. This policy has been developed to take account of the use of digital technology but it is subject to change and any such changes may only be notified within this policy.<br /><br />
 
-					The processing of personal data is regulated by current law including the EU General Data Protection Regulation (GDPR). Any requests by individuals for access to information held about them by Student and Pilgrim Cross should be made in writing to us by <Link href='mailto:data@studentcross.org.uk'>email.</Link></Text>
+					The processing of personal data is regulated by current law including the General Data Protection Regulation (GDPR). Any requests by individuals for access to information held about them by Student Cross should be made in writing to us by <Link href='mailto:data@studentcross.org.uk'>email.</Link></Text>
 
 					<Subheading>How personal information is collected</Subheading>
 
@@ -80,7 +80,17 @@ You have the right to amend or stop receiving any or all such communications at 
 
 Student and Pilgrim Cross currently uses a number of social media platforms, including Facebook and Twitter. Some of these outputs are managed by national officers, some by leg leaders (or other volunteers acting on their behalf). Users can choose to join or follow our social media groups or feeds, subject to the privacy and data policies of the relevant social media platform.<br /><br />
 
-Policy version: May 2018</Text>
+					</Text>
+
+					<Subheading>5. Online video-conference meetings</Subheading>
+
+					<Text>Student Cross and the SCA periodically host online meetings via third-party video conferencing tools. Some of these meetings are recorded for catch-up or publicity purposes. Examples of online meetings include organisational committees, general meetings, liturgies and other pilgrimage activities.<br /><br />
+
+					Where a meeting is being recorded, the meeting host should inform participants beforehand or at the start of the meeting. Meeting attendees have the right to switch off their video, mute their microphone or leave the recorded meeting, otherwise their participation is deemed to be consent to be recorded.<br /><br />
+
+					Attendees of online meetings are also subject to the data and privacy policies of the providors of video conferencing tools used.<br /><br />
+
+Policy version: February 2021</Text>
 				</SectionLeft>
 			</Row>
 
