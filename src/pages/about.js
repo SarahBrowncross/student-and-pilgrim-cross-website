@@ -7,6 +7,7 @@ import Spacer from "../components/spacer"
 import Aside from "../components/aside"
 import { Heading, Subheading } from "../components/headings";
 import Footer from "../components/footer";
+import Button from "../components/button";
 
 const Answer = styled.p`
   display: flex;
@@ -14,7 +15,7 @@ const Answer = styled.p`
 `
 
 export default function About() {
-	return <PageBase>
+	return <PageBase title="about">
 		<PageContainer>
 			<Header pink content={'What is Student and Pilgrim Cross?'} src={'/about-square.jpg'} alt={'pilgrims crossing a bridge'}></Header>
 			<Spacer size={30}></Spacer>
@@ -38,6 +39,9 @@ export default function About() {
 					<Subheading>Where will I be sleeping?</Subheading>
 					<Answer>Different routes have different types of accomodation. The adult walking legs and Wensum sleep in church halls on airbeds on the floor. The family legs for younger children stay in youth hostels. When we arrive in Walsingham we stay at the Pilgrim Bureau.</Answer>
 					<Spacer size={30}></Spacer>
+					<Subheading>What kind of liturgy do we use?</Subheading>
+					<Answer>Each group creates their own liturgy. Student and Pilgrim Cross started out as a Catholic pilgrimage. We are now ecumenical, but different groups lean more towards different faith traditions than others. The services in Walsingham are a mixture of Catholic and Anglican. You can find out more about each groups liturgy on the routes page.</Answer>
+					<Spacer size={30}></Spacer>
 					<Subheading>What gear do I need?</Subheading>
 					<Answer>As long as you've got a waterproof, a sleeping bag, a mat or airbed and some trainers, you'll be alright. No specialist equipment is needed.</Answer>
 					<Spacer size={30}></Spacer>
@@ -55,7 +59,10 @@ export default function About() {
 					<Spacer size={30}></Spacer>
 					<Subheading>How do I get home at the end of the pilgrimage?</Subheading>
 					<Answer>We organise coaches leaving Walsingham at 3pm on Easter Sunday bound for London and Leicester.</Answer>
-					<Spacer size={30}></Spacer>
+					<Spacer size={10}></Spacer>
+					<Button href='/legs' >
+						Choose a Group
+          			</Button>
 				</SectionLeft>
 			</Row>
 			<Footer></Footer>

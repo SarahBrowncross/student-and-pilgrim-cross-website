@@ -42,6 +42,7 @@ const ImageContainer = styled.div`
   top: -50px;
   right: -50px;
   background-color: ${({ theme }) => theme.red};
+  z-index: 3;
 
   @media (max-width: 1040px) {
     width: 350px;

@@ -18,7 +18,7 @@ color: ${({ theme }) => theme.red};
 `
 
 export default function SCA() {
-	return <PageBase>
+	return <PageBase title="bursaries">
 		<PageContainer>
 			<Header pink content={'Financial support to walk'} src={'/support-square.jpg'} alt={'two women hugging'}></Header>
 

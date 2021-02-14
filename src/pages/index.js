@@ -37,7 +37,7 @@ const Cite = styled.cite`
 `
 
 export default function Home() {
-  return <PageBase>
+  return <PageBase title="the Easter pilgrimage to Walsingham">
     <PageContainer>
       <MainPageHeader pink content={'An Easter walking Pilgrimage to Walsingham'} src={'top.jpg'}></MainPageHeader>
 

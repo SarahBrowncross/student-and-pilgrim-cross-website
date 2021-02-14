@@ -14,6 +14,7 @@ export const Row = styled.section`
   padding: 50px;
   justify-content: space-between;
   background: ${({ pink, theme }) => pink ? theme.pink : '#FFFFFF'};
+  z-index: 2;
 
   @media (max-width: 768px){
     flex-direction: column;

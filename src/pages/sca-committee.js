@@ -26,7 +26,7 @@ export default function SCA() {
 			<Row>
 				<SectionLeft width={70}>
 					<Aside>
-						The Student Cross Association (SCA) is a registered charity (charity number 1019313) which exists to raise and disburse funds to needy pilgrims to enable them to walk Student Cross.
+						The Student Cross Association (SCA) is a registered charity (charity number 1019313) which exists to raise and disburse funds to needy pilgrims to enable them to walk Student and Pilgrim Cross.
 
 					For further information <Link href='mailto:association@studentcross.org.uk'>contact the SCA</Link>.
 					</Aside>
@@ -38,13 +38,13 @@ export default function SCA() {
 							To raise funds for grants or loans through individual donations, Student and Pilgrim Cross merchandise, and other appropriate means
 							</li>
 						<li>
-							To distribute grants or loans to needy pilgrims (low-waged and unwaged) to help them to take part in Student Cross
+							To distribute grants or loans to needy pilgrims (low-waged and unwaged) to help them to take part in Student and Pilgrim Cross
 						</li>
 						<li>
 							To ensure that all grants or loans are properly spent and accounted for
 						</li>
 						<li>
-							To report back to the Student Cross Annual General Meeting on allocation and use of grants or loans
+							To report back to the Student and Pilgrim Cross Annual General Meeting on allocation and use of grants or loans
 						</li>
 						<li>
 							To maintain the Student Cross Association web page
@@ -63,19 +63,19 @@ export default function SCA() {
 							1 Honorary Treasurer
 						</li>
 						<li>
-							1 representative from each Leg of Student Cross
+							1 representative from each Leg of Student and Pilgrim Cross
 						</li>
 						<li>
 							Up to 5 Other Elected Members (OEMs)
 						</li>
 						<li>
-							Current and previous General Organising Director of Student Cross
+							Current and previous General Organising Director of Student and Pilgrim Cross
 						</li><br />
 					</BulletList>
-					<Text>The Chair and Vice-Chair of the Committee are elected by the SCA Committee from within its own body every three years. The Secretary of the Committee is elected by the SCA Committee from within its own body every five years. The Treasurer and Secretary are elected by the SCA committee every five years. Leg Reps are elected by their individual Legs every year. OEMs and Trustees are elected by the general body of Student Cross at the SCA AGM.</Text>
+					<Text>The Chair and Vice-Chair of the Committee are elected by the SCA Committee from within its own body every three years. The Secretary of the Committee is elected by the SCA Committee from within its own body every five years. The Treasurer and Secretary are elected by the SCA committee every five years. Leg Reps are elected by their individual Legs every year. OEMs and Trustees are elected by the general body of Student and Pilgrim Cross at the SCA AGM.</Text>
 					<Subheading>SCA Officers</Subheading>
-					<Text>Chair: Jonathan Riley (elected to 2020)<br />
-					Vice-Chair: Andrew Wilson (elected to 2020)<br />
+					<Text>Chair: Jonathan Riley (elected to 2021)<br />
+					Vice-Chair: Andrew Wilson (elected to 2021)<br />
 					Treasurer: Clare Byrne (elected to 2024)<br />
 					Secretary: Michele Crawford (elected to 2021)</Text>
 					<Subheading>How can someone join the SCA Committee?</Subheading>
@@ -163,9 +163,9 @@ export default function SCA() {
 					Rt Rev Bishop Alan Williams, Bishop of Brentwood
 					</Text>
 					<Subheading>SCA AGM</Subheading>
-					<Text>The SCA AGM is normally held every year at Easter, on Holy Saturday in Walsingham during the Student Cross AGM. The SCA AGM Agenda is available from Leg Reps and is displayed on the Pilgrim Bureau noticeboard from Good Friday.<br /><br />
+					<Text>The SCA AGM is normally held every year at Easter, on Holy Saturday in Walsingham during the Student and Pilgrim Cross AGM. The SCA AGM Agenda is available from Leg Reps and is displayed on the Pilgrim Bureau noticeboard from Good Friday.<br /><br />
 
-					As with the Student Cross AGM, an item for discussion at the SCA AGM can be proposed by submission to the SCA Chair, by midday on the day of the SCA AGM. The Chair will determine if the item can be added to the agenda. The agenda will include a standing item listing the positions available for election at the SCA AGM.<br /><br />
+					As with the Student and Pilgrim Cross AGM, an item for discussion at the SCA AGM can be proposed by submission to the SCA Chair, by midday on the day of the SCA AGM. The Chair will determine if the item can be added to the agenda. The agenda will include a standing item listing the positions available for election at the SCA AGM.<br /><br />
 
 					Normally, the SCA AGM each year presents and approves the Annual Accounts for the previous calendar year. However, as no AGM was held at Easter 2020, due to Covid restrictions, the Annual Accounts for 2019 have been accepted by the SCA Trustees on behalf of the SCA.</Text>
 
@@ -191,14 +191,14 @@ export default function SCA() {
 
 					<Subheading>When does the SCA Committee meet?</Subheading>
 					<Text>
-						The SCA Committee meets a minimum of twice per year. The first meeting is the SCA AGM. This is normally held at the same time and place as the Student Cross AGM (usually in the Pilgrim Bureau in Walsingham each Holy Saturday). The second meeting is held in Walsingham every Holy Saturday, usually after the Student Cross AGM. The third meeting is usually held in October. This third meeting is where most of the SCA's main business is discussed and decisions made, including how much money is available for disbursement to Legs in grants for the following Easter.
+						The SCA Committee meets a minimum of twice per year. The first meeting is the SCA AGM. This is normally held at the same time and place as the Student and Pilgrim Cross AGM (usually in the Pilgrim Bureau in Walsingham each Holy Saturday). The second meeting is held in Walsingham every Holy Saturday, usually after the Student and Pilgrim Cross AGM. The third meeting is usually held in October. This third meeting is where most of the SCA's main business is discussed and decisions made, including how much money is available for disbursement to Legs in grants for the following Easter.
 					</Text>
 
 					<Subheading>Minutes of recent SCA meetings:</Subheading>
 
 					<Link href='/sca-minutes-oct2019.pdf'>October 2019 committee meeting</Link>
 					<Link href='/sca-minutes-easter2019.pdf'>Easter 2019 AGM and committee meeting</Link>
-					<Text>All members of Student Cross, regardless of whether or not they are on the SCA Committee, can be invited to attend SCA meetings as an observer and/or to propose items for the agenda. However, as physical space can sometimes be limited, if you would like to attend an SCA meeting please contact the Chair in advance to let them know you would like to come.</Text>
+					<Text>All members of Student and Pilgrim Cross, regardless of whether or not they are on the SCA Committee, can be invited to attend SCA meetings as an observer and/or to propose items for the agenda. However, as physical space can sometimes be limited, if you would like to attend an SCA meeting please contact the Chair in advance to let them know you would like to come.</Text>
 
 					<Spacer size={50}></Spacer>
 

@@ -17,9 +17,9 @@ color: ${({ theme }) => theme.red};
 `
 
 export default function Contact() {
-	return <PageBase>
+	return <PageBase title="safeguarding">
 		<PageContainer>
-			<Header content={'Policy regarding the safety of young pilgrims'} src={'/bible-square.jpg'} alt={'open bible'}></Header>
+			<Header content={'Policy regarding the safety of vulnerable pilgrims'} src={'/bible-square.jpg'} alt={'open bible'}></Header>
 			<Row pink>
 				<SectionLeft width={'70'}>
 					<Text>This document has been drawn up with reference to:</Text>
@@ -78,7 +78,7 @@ Much of the guidance concerning the safety of children and young people with res
 
 For many people the Pilgrimage is a place of safety. It provides an environment where life’s difficulties and hurts can be shared in a climate of security. In this climate a young person may wish to share life experiences that are beyond the remit of anyone on the Pilgrimage to deal with. It is important to remember that if a young person has chosen to share such experiences then they are doing so, most likely, because they feel safe and trust those around them. This trust should be respected. The information should be dealt with calmly and in a way that does not increase the young persons level of fear and powerlessness. To this end the Leaders will also have contact numbers of the Diocesan Child Protection Officer of the area that they happen to be in at that time. This person can be contacted for support, guidance and possible legal advice.<br /><br />
 
-To promote the contents of this document and ensure Legs are aware of their responsibilities Student and Pilgrim Cross will appoint an officer to oversee the Safety of Young Pilgrims. This person will also ensure that this document is revisited and, if necessary, revised on an annual basis, and will keep a copy of each Form PC completed for any future reference.<br /><br />
+To promote the contents of this document and ensure Legs are aware of their responsibilities Student and Pilgrim Cross will appoint an officer to oversee the Safety of vulnerable Pilgrims. This person will also ensure that this document is revisited and, if necessary, revised on an annual basis, and will keep a copy of each Form PC completed for any future reference.<br /><br />
 
 If you have any questions about the contents of this document please email the <Link href='mailto:co-ordinator@studentcross.org.uk'>National director.</Link></Text>
 

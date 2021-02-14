@@ -16,7 +16,7 @@ color: ${({ theme }) => theme.red};
 `
 
 export default function Contact() {
-	return <PageBase>
+	return <PageBase title="data and privacy">
 		<PageContainer>
 			<Header content={'Data and privacy policy'} src={'/bible-square.jpg'} alt={'open bible'}></Header>
 			<Row pink>
@@ -31,7 +31,7 @@ export default function Contact() {
 
 					The management and use of personal information is carried out within current UK data protection laws. This policy has been developed to take account of the use of digital technology but it is subject to change and any such changes may only be notified within this policy.<br /><br />
 
-					The processing of personal data is regulated by current law including the General Data Protection Regulation (GDPR). Any requests by individuals for access to information held about them by Student Cross should be made in writing to us by <Link href='mailto:data@studentcross.org.uk'>email.</Link></Text>
+					The processing of personal data is regulated by current law including the General Data Protection Regulation (GDPR). Any requests by individuals for access to information held about them by Student and Pilgrim Cross should be made in writing to us by <Link href='mailto:data@studentcross.org.uk'>email.</Link></Text>
 
 					<Subheading>How personal information is collected</Subheading>
 
@@ -51,7 +51,7 @@ export default function Contact() {
 
 					<Subheading>2. Student Cross Association</Subheading>
 
-					<Text>The Student Cross Association (SCA) is a registered charity that exists to raise and disburse funds to needy pilgrims to enable them to take part in Student Cross.<br /><br />
+					<Text>The Student Cross Association (SCA) is a registered charity that exists to raise and disburse funds to needy pilgrims to enable them to take part in Student and Pilgrim Cross.<br /><br />
 
 
 As part of the pilgrimage booking process, applicants are asked to self-declare in one of several income categories or to request further financial help from the SCA. This declaration is made available to the leader of your preferred leg and may be made available to the SCA Treasurer and Trustees to help them to decide if you are entitled to an SCA grant or other bursary.<br /><br />
@@ -84,7 +84,7 @@ Student and Pilgrim Cross currently uses a number of social media platforms, inc
 
 					<Subheading>5. Online video-conference meetings</Subheading>
 
-					<Text>Student Cross and the SCA periodically host online meetings via third-party video conferencing tools. Some of these meetings are recorded for catch-up or publicity purposes. Examples of online meetings include organisational committees, general meetings, liturgies and other pilgrimage activities.<br /><br />
+					<Text>Student and Pilgrim Cross and the SCA periodically host online meetings via third-party video conferencing tools. Some of these meetings are recorded for catch-up or publicity purposes. Examples of online meetings include organisational committees, general meetings, liturgies and other pilgrimage activities.<br /><br />
 
 					Where a meeting is being recorded, the meeting host should inform participants beforehand or at the start of the meeting. Meeting attendees have the right to switch off their video, mute their microphone or leave the recorded meeting, otherwise their participation is deemed to be consent to be recorded.<br /><br />
 

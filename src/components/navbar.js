@@ -27,9 +27,10 @@ const NavBarBase = styled.nav`
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 50px;
+
 	@media (max-width: 768px) {
-	padding: 0 5px;
-}
+		padding: 0 5px;
+	}
 `;
 
 const NavBarPlaceholder = styled.div`

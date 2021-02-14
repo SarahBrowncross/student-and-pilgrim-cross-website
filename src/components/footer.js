@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Instagram, Facebook, Twitter } from '@styled-icons/boxicons-logos';
 
 const Logo = styled.a`
 	font-family: 'Expletus Sans', cursive;
@@ -16,7 +17,7 @@ const FooterBase = styled.nav`
 	justify-content: space-between;
 	align-items: center;
 	padding: 30px 5px;
-	flex-direction: column-reverse;
+	flex-direction: column;
 `;
 
 const Link = ({ children, href = '#', className }) => (
@@ -26,7 +27,7 @@ const Link = ({ children, href = '#', className }) => (
 const Links = styled.ul`
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 
 	& a {
 		padding: 1em;
@@ -51,26 +52,39 @@ const Links = styled.ul`
 			width: calc(100% - 1.6em);
 		}
 	}
+	@media (max-width: 568px) {
+    font-size: 0.7em;
+}
 `;
 
 const SCAtext = styled.p`
-	font-size: 0.9em;
+	font-size: 0.8em;
 	padding: 1em;
-	line-height: 1em;
+	line-height: 1.3em;
 	text-align: center;
 	color: white;
+
+	& a{
+		color: white;
+	}
 `;
+
 
 const Footer = () => (
 	<>
 		<FooterBase>
-			<Logo href='/'>S&PX</Logo>
-			<SCAtext>Student and Pilgrim Cross is supported by the Student Cross Association Registered Charity number 1019313</SCAtext>
 			<Links>
-				<Link href="/data-policy">Data policy</Link>
+				<Link href="https://www.instagram.com/student_cross/"><Instagram /></Link>
+				<Link href="https://www.facebook.com/studentcross"><Facebook /></Link>
+				<Link href="https://twitter.com/studentcross"><Twitter /></Link>
+			</Links>
+			<Links>
+				<Link href="/data-policy">Data and Privacy</Link>
 				<Link href="/safeguarding">Safeguarding</Link>
 				<Link href="/contact">Contact Us</Link>
 			</Links>
+			<SCAtext>Student and Pilgrim Cross is supported by the <a href="/sca">Student Cross Association</a> Registered Charity number 1019313</SCAtext>
+			<Logo href='/'>S&PX</Logo>
 		</FooterBase>
 	</>
 )

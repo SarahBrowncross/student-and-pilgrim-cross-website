@@ -18,7 +18,7 @@ color: ${({ theme }) => theme.red};
 `
 
 export default function SCA() {
-	return <PageBase>
+	return <PageBase title="fundraising">
 		<PageContainer>
 			<Header pink content={'Fundraising and regular giving'} src={'/support-square.jpg'} alt={'two women hugging'}></Header>
 
@@ -30,7 +30,7 @@ export default function SCA() {
 					<Subheading>Got some ideas for fundraising?</Subheading>
 
 					<Text>
-						The Student Cross Association (SCA) encourages both one-off donations as well as regular giving in order to help support students to take part in student cross.
+						The Student Cross Association (SCA) encourages both one-off donations as well as regular giving in order to help support students to take part in Student and Pilgrim Cross.
 						The main methods of fundraising currently are:<br />
 					</Text>
 					<BulletList>

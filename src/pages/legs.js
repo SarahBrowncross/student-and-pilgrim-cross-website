@@ -33,6 +33,10 @@ background: ${({ theme, active }) => active ? theme.pink : 'white'};
 	width: 33%;
 	font-size: 0.8em;
 }
+
+@media (max-width: 568px) {
+	padding: 10px 5px 10px;
+}
 `
 
 const TabBody = styled.section`
@@ -104,17 +108,17 @@ const Content = ({ tab }) => {
 						For 2021 we are taking the pilgrimage online with services, reflections, socials and daily activities throughout holy week
 				</Aside>
 					<Spacer size={50}></Spacer>
-
+					<VirtualImageContainer>
+						<TopImage src="/virtual-square.jpg" alt="people holding up candles on a video call" />
+					</VirtualImageContainer>
+					<Spacer size={30}></Spacer>
 					<LegTitle>Virtual pilgrimage</LegTitle>
 					<Subheading><p>Days: 7</p><p>Starting from: Your living room</p><p>Length: 0 miles</p> Cost: Free</Subheading>
 					<LegBio>We cannot be together in person again this year so we're building on the success of our 2020 virtual pilgrimage and taking Student and Pilgrim Cross online. Every day from Saturday 27 March to Holy Saturday we'll be hosting a daily liturgy led by one of our route groups on zoom. We'll also be broadcasting a programme of reflections offered by our pilgrims across the UK. Both are available live or to catch up on later. On Easter Sunday there will be an evening liturgy to celebrate Easter followed by our usual party - get working on your acts now!<br /><br />On top of that, some of our groups are running their own schedule of social events and liturgy during the week to keep the community spirit of Student and Pilgrim Cross alive! You can choose a leg to join in with or just sign up to the central events. Sign up to get the full schedule and links for everything, or keep reading to find out what each group is offering.</LegBio>
 					<Button href="https://docs.google.com/forms/d/e/1FAIpQLSe-inT8C5JXlI3HaByn1Phi7xhj1Q6XE9z_968u4cNbVvQeGw/viewform">Sign up as an adult</Button>
 					<Button href="https://docs.google.com/forms/d/e/1FAIpQLSdkBSF9bwryZK2zlPTlqXITCUfrjUnhNvwzAGwPmcLG_HoFiA/viewform">Sign up as a family</Button>
 					<Spacer size={20}></Spacer>
-					<VirtualImageContainer>
-						<TopImage src="/virtual-square.jpg" alt="people holding up candles on a video call" />
-					</VirtualImageContainer>
-					<Spacer size={30}></Spacer>
+					
 					<LegText>
 						<LegTitle>Essex</LegTitle>
 						<Spacer size={10}></Spacer>
@@ -126,7 +130,7 @@ const Content = ({ tab }) => {
 						<Spacer size={10}></Spacer>
 						<LegBio>Join us for a Holy Week of community, prayer and inspiration. Northern will be meeting on zoom for liturgy and for social events. We welcome people from different church traditions, and those who are exploring faith. Typically our liturgy is fresh and creative. We hope the week will be a safe space for doubts, questions, and sharing struggles. There will also be lots of space for fun. Through the week we will gather for a quiz, a party-piece evening, and every evening for informal chat. So come and give us a try, you will be welcome.
 
-						Find out more <Link href='northernpilgrim.org/holyweek2021/'>here</Link>.  </LegBio>
+						Find out more <Link href='http://northernpilgrim.org/holyweek2021/'>here</Link>.  </LegBio>
 					</LegText>
 					<Spacer size={30}></Spacer>
 					<LegText>
@@ -151,7 +155,7 @@ const Content = ({ tab }) => {
 						<Spacer size={10}></Spacer>
 						<LegBio>Peg is one of the family legs and we seek to enable children and parents to explore, enjoy and grow together.
 
-						In addition to Student and Pilgrim Cross liturgy and events, Peg Leg will also have a family-orientated offering. This includes children’s liturgies and evening prayer, parents’ evening prayers and socials, as well as arts and crafts for children to do with parents in their own time.
+						In addition to Student and Pilgrim Cross liturgy and events, Peg will also have a family-orientated offering. This includes children’s liturgies and evening prayer, parents’ evening prayers and socials, as well as arts and crafts for children to do with parents in their own time.
 
 						This year, we are mindful that many children and parents will be at school or working during Holy Week, so events will be taking place at the weekends and some weekday evenings.
 
@@ -163,7 +167,7 @@ const Content = ({ tab }) => {
 					<LegText>
 						<LegTitle>Wells</LegTitle>
 						<Spacer size={10}></Spacer>
-						<LegBio>Wells Leg is mostly (but not exclusively) a group of families, usually with children ranging from babies up to early teens.
+						<LegBio>Wells is mostly (but not exclusively) a group of families, usually with children ranging from babies up to early teens.
 						
 						Over this Holy Week, we are planning to provide some optional daytime activities for kids (recognising that many will be at school during Holy Week) and a short kids evening prayer each evening. We will also have adult evening prayers for Palm Sunday, Good Friday, and Holy Saturday, with some social time afterwards for those that want to stay on.
 						
@@ -305,7 +309,7 @@ const Content = ({ tab }) => {
 							<LegTitle>Peg</LegTitle>
 							<Subheading><p>Days: 5</p><p>Age: all ages but primarily primary school</p> Cost: £305 (adults, children aged 14 and over),
 							£133 (children aged 3-13)</Subheading>
-							<LegBio>The oldest family leg, Peg contains all the elements of a pilgrimage with a twist. Our cross, walking distance, accommodation and liturgy is more aimed at our younger members. We spend our time doing a range of activities including crafts, egg rolling, making an Easter garden, and other child friendly activities such as swimming and go-karting (over 10’s only). Our group is mostly made up of previous Student Cross walkers who now bring their own children along, but for others Peg Leg has been their first experience of Student Cross.
+							<LegBio>The oldest family leg, Peg contains all the elements of a pilgrimage with a twist. Our cross, walking distance, accommodation and liturgy is more aimed at our younger members. We spend our time doing a range of activities including crafts, egg rolling, making an Easter garden, and other child friendly activities such as swimming and go-karting (over 10’s only). Our group is mostly made up of previous Student and Pilgrim Cross walkers who now bring their own children along, but for others Peg Leg has been their first experience of Student and Pilgrim Cross.
 							</LegBio>
 						</LegText>
 					</LegContainer>
@@ -317,7 +321,7 @@ const Content = ({ tab }) => {
 						<LegText>
 							<LegTitle>Wells</LegTitle>
 							<Subheading><p>Days: 5</p><p>Age: all ages but primarily primary school</p> Cost: £290 (adults,£130 (children aged 3+)</Subheading>
-							<LegBio>A family pilgrimage based in Wells-next-the-Sea, we walk every day covering distances suitable for young children and three-wheel buggies. The rest of our days are filled with other activities including craft, the beach, swimming, the steam train, and Easter activities with the local Parish over the road. Our liturgy caters for everyone in your family: adult, baby, child or teenager. We enjoy many things you may expect from walking other parts of Student Cross. These included, but are not limited to: the beach, local countryside, cake, beer, cheese and whisky.
+							<LegBio>A family pilgrimage based in Wells-next-the-Sea, we walk every day covering distances suitable for young children and three-wheel buggies. The rest of our days are filled with other activities including craft, the beach, swimming, the steam train, and Easter activities with the local Parish over the road. Our liturgy caters for everyone in your family: adult, baby, child or teenager. We enjoy many things you may expect from walking other parts of Student and Pilgrim Cross. These included, but are not limited to: the beach, local countryside, cake, beer, cheese and whisky.
 							</LegBio>
 						</LegText>
 					</LegContainer>
@@ -356,9 +360,9 @@ const Content = ({ tab }) => {
 
 export default function Home() {
 	const [tab, setTab] = useState(0);
-	return <PageBase>
+	return <PageBase title="routes">
 		<PageContainer>
-			<Header content={'The twelve routes to Walsingham'} src={'/legs-square.jpg'} alt={'pilgrims crossing a field'}></Header>
+			<Header content={'The routes to Walsingham'} src={'/legs-square.jpg'} alt={'pilgrims crossing a field'}></Header>
 			<div>
 				<Tab onClick={() => setTab(0)} active={tab === 0}>Virtual for 2021</Tab>
 				<Tab onClick={() => setTab(1)} active={tab === 1}>For Adults</Tab>

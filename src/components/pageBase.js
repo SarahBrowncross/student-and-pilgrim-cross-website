@@ -1,5 +1,5 @@
 import React from "react"
-import { createGlobalStyle, ThemeProvider } from "styled-components"
+import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
 import { Helmet } from "react-helmet"
 import theme from "../theme"
 import NavBar from "./navbar"
@@ -55,10 +55,17 @@ table {
 	border-spacing: 0;
 }
 `
-export default function PageBase({ children }) {
+
+const PageWrapper = styled.div`
+	overflow: hidden;
+	width: 100vw;
+	position: relative;
+`
+export default function PageBase({ children, title }) {
 	return (
 		<>
 			<Helmet>
+				<title>Student and Pilgrim Cross - {title}</title>
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@600&display=swap" rel="stylesheet" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -75,8 +82,10 @@ export default function PageBase({ children }) {
 			</Helmet>
 			<GlobalStyle />
 			<ThemeProvider theme={theme}>
-				<NavBar />
-				{children}
+				<PageWrapper>
+					<NavBar />
+					{children}
+				</PageWrapper>
 			</ThemeProvider>
 		</>
 	)

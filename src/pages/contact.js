@@ -22,13 +22,14 @@ line-height:1.4em;
 
 
 export default function Contact() {
-	return <PageBase>
+	return <PageBase title="contact">
 		<PageContainer>
 			<Header content={'Get in touch'} src={'/contact-square.jpg'} alt={'woman holding a cup of tea and cake'}></Header>
 			<Row pink>
 				<SectionLeft width={'80%'}>
+					<Spacer size={50}></Spacer>
 					<Heading>Mailing list</Heading>
-					<Name><Link href="https://docs.google.com/forms/d/e/1FAIpQLSdFxcsfq_Ulqiah-sDvbSNXaG59G4MVhW9DwCcdL2cZvfsC9w/viewform?embedded=true&amp;usp=embed_googleplus">Join our mailing list</Link></Name>
+					<Name><Link href="https://docs.google.com/forms/d/e/1FAIpQLSdFxcsfq_Ulqiah-sDvbSNXaG59G4MVhW9DwCcdL2cZvfsC9w/viewform">Join our mailing list</Link></Name>
 					<Spacer size={'50'}></Spacer>
 					<Heading>Contacts</Heading>
 					<Name><Link href='mailto:info@studentcross.org.uk'>General information</Link></Name>
@@ -37,7 +38,7 @@ export default function Contact() {
 					<Name><Link href='mailto:info@studentcross.org.uk'>Recruitment director</Link> - Laura Mitcham</Name>
 					<Name><Link href='mailto:liturgy@studentcross.org.uk'>Liturgy chair</Link> - Claire Brennan</Name>
 					<Name><Link href='mailto:association@studentcross.org.uk'>Student Cross Association Chair</Link> - Jonathan Riley</Name>
-					<Name><Link href='mailto:editor@studentcross.org.uk'>Website, online booking, data management</Link> - Murray White</Name>
+					<Name><Link href='mailto:editor@studentcross.org.uk'>Online booking, data management</Link> - Murray White</Name>
 				</SectionLeft>
 			</Row>
 

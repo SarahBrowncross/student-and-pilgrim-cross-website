@@ -57,7 +57,7 @@ const Menu = ({ open }) => {
       <Link href="/legs">Routes</Link>
       <Link href="/sca">Bursaries</Link>
       <Link href="/news">News</Link>
-      <CTA>Walk with us</CTA>
+      <CTA href="/legs">Walk with us</CTA>
     </StyledMenu>
   )
 }
