@@ -44,8 +44,8 @@ export default function Home() {
       <Row>
         <SectionLeft>
           <HomeBulletList>
-            <li>12 different routes</li>
-            <li>lengths of 1, 3 or 7 days</li>
+            <li>routes for adults and families</li>
+            <li>lengths of 1, 3, 5 or 7 days</li>
             <li>every Easter (virtual for 2021!)</li>
             <li>food and accomodation included</li>
             <li>financial help available</li>
