@@ -3,18 +3,13 @@ import styled from "styled-components"
 import { PageContainer, SectionLeft, Row } from "../components/layout"
 import PageBase from "../components/pageBase"
 import Header from "../components/header"
-import Spacer from "../components/spacer"
-import BulletList from "../components/bulletList";
 import { Heading, Subheading } from "../components/headings";
 import Footer from "../components/footer";
+import Link from "../components/link";
 
 const Text = styled.p`
   font-size: 1.1em;
   margin: 10px 0px;
-`
-
-const Link = styled.a`
-color: ${({ theme }) => theme.red};
 `
 
 export default function SCA() {
@@ -37,7 +32,7 @@ export default function SCA() {
 
 					This is a decision taken after careful consideration and discussion with all concerned, but more importantly like everyone else we have a responsibility to follow current guidance and to protect each other, our families, and our communities. Our thoughts and prayers continue for all those affected in anyway by the pandemic and those who are working to keep us safe.<br /><br />
 
-					Any enquiries regarding this matter should be directed to the <Link href='mailto:co-ordinator@studentcross.org.uk'>National director</Link>.<br /><br />
+					Any enquiries regarding this matter should be directed to the <Link mailto="Y28tb3JkaW5hdG9yQHN0dWRlbnRjcm9zcy5vcmcudWs=">National director</Link>.<br /><br />
 
 					Online registration for 2021 will open in the near future and our groups are currently finalising their plans for gathering virtually to celebrate Holy Week and Easter. More details will follow in the next few weeks.
 				</Text>

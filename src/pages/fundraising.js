@@ -7,14 +7,11 @@ import Spacer from "../components/spacer"
 import BulletList from "../components/bulletList";
 import { Subheading } from "../components/headings";
 import Footer from "../components/footer";
+import Link from "../components/link"
 
 const Text = styled.p`
   font-size: 1.1em;
   margin: 10px 0px;
-`
-
-const Link = styled.a`
-color: ${({ theme }) => theme.red};
 `
 
 export default function SCA() {
@@ -46,12 +43,12 @@ export default function SCA() {
 
 					Individual donations are the most important part of the Association's annual income - they allow the Association to plan ahead and be able to distribute a guaranteed number of grants every year. Regular donations are welcomed in the form of monthly or annual standing orders.<br /><br />
 
-					If you would like to make a regular donation, please ask for a Regular Giving and Gift Aid form by <Link href='mailto:association@studentcross.org.uk'>emailing the SCA</Link>.
+					If you would like to make a regular donation, please ask for a Regular Giving and Gift Aid form by <Link mailto="YXNzb2NpYXRpb25Ac3R1ZGVudGNyb3NzLm9yZy51aw==">emailing the SCA</Link>.
 					Please include your name, postal and email addresses and a contact phone number. Say whether you would prefer to receive a downloadable (pdf) form sent by email or a paper form sent by post.<br /><br />
 
 Gift Aid - if you are a UK taxpayer, you can help us to increase the value of your donation, at no extra cost to yourself, by completing the Gift Aid Declaration on the donation form. This will enable us to increase your donation by 28p for every £1 you give.<br /><br />
 
-If you have other ideas for fundraising, please 						<Link href='mailto:association@studentcross.org.uk'>contact the SCA</Link>.
+If you have other ideas for fundraising, please 						<Link mailto="YXNzb2NpYXRpb25Ac3R1ZGVudGNyb3NzLm9yZy51aw==">contact the SCA</Link>.
 					</Text>
 
 					<Spacer size={50}></Spacer>

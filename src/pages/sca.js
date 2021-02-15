@@ -4,6 +4,7 @@ import { PageContainer, SectionLeft, Row } from "../components/layout"
 import PageBase from "../components/pageBase"
 import Header from "../components/header"
 import Spacer from "../components/spacer"
+import Link from "../components/link"
 import BulletList from "../components/bulletList";
 import { Heading } from "../components/headings";
 import Footer from "../components/footer";
@@ -11,10 +12,6 @@ import Footer from "../components/footer";
 const Text = styled.p`
   font-size: 1.1em;
   margin: 10px 0px;
-`
-
-const Link = styled.a`
-color: ${({ theme }) => theme.red};
 `
 
 export default function SCA() {

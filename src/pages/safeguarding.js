@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { PageContainer, SectionLeft, Row } from "../components/layout"
 import PageBase from "../components/pageBase"
 import Header from "../components/header"
-import Spacer from "../components/spacer"
+import Link from "../components/link";
 import { Heading, Subheading } from "../components/headings";
 import Footer from '../components/footer'
 import BulletList from "../components/bulletList";
@@ -11,9 +11,6 @@ import BulletList from "../components/bulletList";
 const Text = styled.p`
   font-size: 1.1em;
   margin: 10px 0px;
-`
-const Link = styled.a`
-color: ${({ theme }) => theme.red};
 `
 
 export default function Contact() {
@@ -80,7 +77,7 @@ For many people the Pilgrimage is a place of safety. It provides an environment 
 
 To promote the contents of this document and ensure Legs are aware of their responsibilities Student and Pilgrim Cross will appoint an officer to oversee the Safety of vulnerable Pilgrims. This person will also ensure that this document is revisited and, if necessary, revised on an annual basis, and will keep a copy of each Form PC completed for any future reference.<br /><br />
 
-If you have any questions about the contents of this document please email the <Link href='mailto:co-ordinator@studentcross.org.uk'>National director.</Link></Text>
+If you have any questions about the contents of this document please email the <Link mailto="Y28tb3JkaW5hdG9yQHN0dWRlbnRjcm9zcy5vcmcudWs=">National director.</Link></Text>
 
 				</SectionLeft>
 			</Row>

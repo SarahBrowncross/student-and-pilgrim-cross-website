@@ -6,17 +6,12 @@ import Button from "../components/button";
 import { PageContainer, SectionLeft, Row, SectionRight } from "../components/layout";
 import Aside from "../components/aside";
 import BulletList from "../components/bulletList";
-import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 
 const HomeBulletList = styled(BulletList)`
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
 `
-
-const Link = ({ children, href = '#', className }) => (
-  <a href={href} className={className}>{children}</a>
-);
 
 const HomeAside = styled(Aside)`
   font-size: 1.2em;
@@ -74,7 +69,7 @@ export default function Home() {
         </SectionLeft>
         <SectionRight>
           <HomeAside>
-            There are <b>12 groups</b>, or legs, each starting from a different point and each with their <b>own unique character</b>
+            There are <b>10 groups</b>, or legs, each starting from a different point and each with their <b>own unique character</b>
           </HomeAside>
           <Button href='/legs' >
             Choose a Group

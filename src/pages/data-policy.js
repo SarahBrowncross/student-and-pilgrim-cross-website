@@ -3,16 +3,13 @@ import styled from "styled-components"
 import { PageContainer, SectionLeft, Row } from "../components/layout"
 import PageBase from "../components/pageBase"
 import Header from "../components/header"
-import Spacer from "../components/spacer"
+import Link from "../components/link"
 import { Heading, Subheading } from "../components/headings";
 import Footer from '../components/footer'
 
 const Text = styled.p`
   font-size: 1.1em;
   margin: 10px 0px;
-`
-const Link = styled.a`
-color: ${({ theme }) => theme.red};
 `
 
 export default function Contact() {
@@ -31,7 +28,7 @@ export default function Contact() {
 
 					The management and use of personal information is carried out within current UK data protection laws. This policy has been developed to take account of the use of digital technology but it is subject to change and any such changes may only be notified within this policy.<br /><br />
 
-					The processing of personal data is regulated by current law including the General Data Protection Regulation (GDPR). Any requests by individuals for access to information held about them by Student and Pilgrim Cross should be made in writing to us by <Link href='mailto:data@studentcross.org.uk'>email.</Link></Text>
+					The processing of personal data is regulated by current law including the General Data Protection Regulation (GDPR). Any requests by individuals for access to information held about them by Student and Pilgrim Cross should be made in writing to us by <Link mailto='ZGF0YUBzdHVkZW50Y3Jvc3Mub3JnLnVr'>email.</Link></Text>
 
 					<Subheading>How personal information is collected</Subheading>
 
@@ -71,7 +68,7 @@ To find out more about the SCA including its grants policy and annual accounts g
 
 We may use this information to inform you of news and information about the pilgrimage or to invite you to take part in future pilgrimages or other events or activities organised by Student and Pilgrim Cross. Such communications may include emails, phone calls or invites to join or follow social media groups, lists or streams.<br /><br />
 
-You have the right to amend or stop receiving any or all such communications at any time. To request amendment or removal from any communications including mailing lists, please make your request in writing to us via <Link href='mailto:data@studentcross.org.uk'>email.</Link></Text>
+You have the right to amend or stop receiving any or all such communications at any time. To request amendment or removal from any communications including mailing lists, please make your request in writing to us via <Link mailto='ZGF0YUBzdHVkZW50Y3Jvc3Mub3JnLnVr'>email.</Link></Text>
 
 
 					<Subheading>4. Website and other online places</Subheading>

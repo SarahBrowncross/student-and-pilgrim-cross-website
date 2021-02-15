@@ -8,18 +8,15 @@ import BulletList from "../components/bulletList";
 import { Heading, Subheading } from "../components/headings";
 import Footer from "../components/footer";
 import Aside from "../components/aside";
+import Link from "../components/link";
 
 const Text = styled.p`
   font-size: 1.1em;
   margin: 10px 0px;
 `
 
-const Link = styled.a`
-color: ${({ theme }) => theme.red};
-`
-
 export default function SCA() {
-	return <PageBase>
+	return <PageBase title="SCA">
 		<PageContainer>
 			<Header pink content={'About the Student Cross Association'} src={'/support-square.jpg'} alt={'two women hugging'}></Header>
 
@@ -28,7 +25,7 @@ export default function SCA() {
 					<Aside>
 						The Student Cross Association (SCA) is a registered charity (charity number 1019313) which exists to raise and disburse funds to needy pilgrims to enable them to walk Student and Pilgrim Cross.
 
-					For further information <Link href='mailto:association@studentcross.org.uk'>contact the SCA</Link>.
+					For further information <Link mailto="YXNzb2NpYXRpb25Ac3R1ZGVudGNyb3NzLm9yZy51aw==">contact the SCA</Link>.
 					</Aside>
 					<Spacer size={30}></Spacer>
 					<Subheading>The SCA's aims</Subheading>

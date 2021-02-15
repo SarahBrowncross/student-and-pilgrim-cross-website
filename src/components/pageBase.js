@@ -59,6 +59,7 @@ table {
 const PageWrapper = styled.div`
 	overflow: hidden;
 	width: 100vw;
+	max-width: 100%;
 	position: relative;
 `
 export default function PageBase({ children, title }) {

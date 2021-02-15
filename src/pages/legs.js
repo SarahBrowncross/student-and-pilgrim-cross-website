@@ -9,6 +9,7 @@ import Aside from "../components/aside"
 import BulletList from '../components/bulletList'
 import { Heading, Subheading } from "../components/headings";
 import Footer from "../components/footer";
+import Link from "../components/link";
 
 const Tab = styled.button`
 width: 200px;
@@ -63,9 +64,6 @@ const LegTitle = styled(Heading)`
 @media (max-width: 768px) {
 	align-self: center;
 }
-`
-const Link = styled.a`
-color: ${({ theme }) => theme.red};
 `
 
 const LegText = styled.div`
@@ -147,7 +145,22 @@ const Content = ({ tab }) => {
 						Our regular Oxford meetings will be at 6pm, usually using the Office of Readings. We have traditional Palm Sunday activities planned and socials including 'Bible Show and Tell', Film Night, an Oxford themed quiz.
 
 						On Maundy Thursday we will share in a virtual 'Love Feast' service. On Good Friday, after the reading of the Passion we hope to meet up with fellow pilgrims from other groups, much as we would in Walsingham. During Easter weekend we will be with Student and Pilgrim Cross as a whole, with a closing gathering before our pilgrimage ends.
-</LegBio>
+					</LegBio>
+					</LegText>
+					<Spacer size={30}></Spacer>
+					<LegText>
+						<LegTitle>Midland</LegTitle>
+						<Spacer size={10}></Spacer>
+						<LegBio>Midland will be meeting virtually every day of Easter week at 8pm over Zoom for an hour of liturgy, reminiscing, and all-round Student and Pilgrim Cross jollity. There will also be a few occasions where we will have a slightly different schedule to our evening, or an extra event in the day. 
+						If you are interested in joining Midland sign up soon as places will be limited to 25 members in total, and some places will be kept for potential new walkers until closer to Holy Week. 
+					</LegBio>
+					</LegText>
+					<Spacer size={30}></Spacer>
+					<LegText>
+						<LegTitle>Wensum</LegTitle>
+						<Spacer size={10}></Spacer>
+						<LegBio>Wensum welcomes teenagers (and their parents) to a week of online pilgrimage which may involve less walking, but will give you a great feel for this lively group! We're planning on having a mix of liturgy including things such as a welcome service and running one of the pilgrimage's central liturgies. On top of this there will be plenty of socials such as kahoot quizzes and Jackbox games. We'd be glad to have you! 
+					</LegBio>
 					</LegText>
 					<Spacer size={30}></Spacer>
 					<LegText>

@@ -5,16 +5,12 @@ import PageBase from "../components/pageBase"
 import Header from "../components/header"
 import Spacer from "../components/spacer"
 import BulletList from "../components/bulletList";
-import { Heading } from "../components/headings";
+import Link from "../components/link"
 import Footer from "../components/footer";
 
 const Text = styled.p`
   font-size: 1.1em;
   margin: 10px 0px;
-`
-
-const Link = styled.a`
-color: ${({ theme }) => theme.red};
 `
 
 export default function SCA() {
@@ -49,7 +45,7 @@ export default function SCA() {
 
 					There will be always be families who are close to the borders of these categories and there is an element of discretion and trust that the SCA allows. The SCA Treasurer is available to talk to if a family is really struggling to decide into which category they fit.<br /><br />
 
-						<Link href='mailto:association@studentcross.org.uk'>Contact the SCA</Link> to find out more about family funding.
+						<Link mailto="YXNzb2NpYXRpb25Ac3R1ZGVudGNyb3NzLm9yZy51aw==">Contact the SCA</Link> to find out more about family funding.
 					</Text>
 
 					<Spacer size={50}></Spacer>
