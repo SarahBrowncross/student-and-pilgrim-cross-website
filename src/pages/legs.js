@@ -292,7 +292,7 @@ const Content = ({ tab }) => {
 						</ImageContainer>
 						<LegText>
 							<LegTitle>Easter</LegTitle>
-							<Subheading><p>Days: 1</p><p>Length: 120 miles</p> Cost: £65 (waged)/£35 (low or unwaged)</Subheading>
+							<Subheading><p>Days: 1</p><p>Length: 12 miles</p> Cost: £65 (waged)/£35 (low or unwaged)</Subheading>
 							<LegBio>Easter meet up in Walsingham on Thursday evening to celebrate Mass of the Last Supper, and walk the 12miles from Wells to Walsingham the next day. The small amount of time together does not stop us from forming great friendships, having a good sing song and time for group reflection. Walkers on Easter arrange their own accommodation and travel. The fee goes towards the cost of two main meals, the Chaplain, the GOD fund and other general expenses. This group is for everyone, from those with young children or limited mobility to work commitments, all are welcome!
 </LegBio>
 						</LegText>

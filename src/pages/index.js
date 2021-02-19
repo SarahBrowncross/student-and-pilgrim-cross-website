@@ -42,7 +42,7 @@ export default function Home() {
             <li>routes for adults and families</li>
             <li>lengths of 1, 3, 5 or 7 days</li>
             <li>every Easter (virtual for 2021!)</li>
-            <li>food and accomodation included</li>
+            <li>food and accommodation included</li>
             <li>financial help available</li>
           </HomeBulletList>
         </SectionLeft>

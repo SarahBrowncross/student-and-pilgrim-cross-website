@@ -74,9 +74,9 @@ const Footer = () => (
 	<>
 		<FooterBase>
 			<Links>
-				<Link href="https://www.instagram.com/student_cross/"><Instagram /></Link>
-				<Link href="https://www.facebook.com/studentcross"><Facebook /></Link>
-				<Link href="https://twitter.com/studentcross"><Twitter /></Link>
+				<Link href="https://www.instagram.com/student_cross/"><Instagram size={24} /></Link>
+				<Link href="https://www.facebook.com/studentcross"><Facebook size={24} /></Link>
+				<Link href="https://twitter.com/studentcross"><Twitter size={24} /></Link>
 			</Links>
 			<Links>
 				<Link href="/data-policy">Data and Privacy</Link>
@@ -84,7 +84,7 @@ const Footer = () => (
 				<Link href="/contact">Contact Us</Link>
 			</Links>
 			<SCAtext>Student and Pilgrim Cross is supported by the <a href="/sca">Student Cross Association</a> Registered Charity number 1019313</SCAtext>
-			<Logo href='/'>S&PX</Logo>
+			<Logo href='/'>S+PX</Logo>
 		</FooterBase>
 	</>
 )
