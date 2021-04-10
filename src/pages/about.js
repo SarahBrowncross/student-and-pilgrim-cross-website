@@ -8,10 +8,9 @@ import Aside from "../components/aside"
 import { Heading, Subheading } from "../components/headings";
 import Footer from "../components/footer";
 import Button from "../components/button";
+import Link from "../components/link";
 
 const Answer = styled.p`
-  display: flex;
-  flex-direction: column;
 `
 
 export default function About() {
@@ -59,6 +58,9 @@ export default function About() {
 					<Spacer size={30}></Spacer>
 					<Subheading>How do I get home at the end of the pilgrimage?</Subheading>
 					<Answer>We organise coaches leaving Walsingham at 3pm on Easter Sunday bound for London and Leicester.</Answer>
+					<Spacer size={30}></Spacer>
+					<Subheading>How did Student and Pilgrim Cross start?</Subheading>
+					<Answer>We were founded in 1948 by a group of Catholic students who enjoyed it so much they just kept coming back year after year. You can read more about it <Link href="/history">on our history page</Link></Answer>
 					<Spacer size={10}></Spacer>
 					<Button href='/legs' >
 						Choose a Group

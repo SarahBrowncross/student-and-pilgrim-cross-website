@@ -10,6 +10,7 @@ import BulletList from '../components/bulletList'
 import { Heading, Subheading } from "../components/headings";
 import Footer from "../components/footer";
 import Link from "../components/link";
+import ImageContainer from "../components/imageContainer"
 
 const Tab = styled.button`
 width: 200px;
@@ -74,20 +75,6 @@ const LegText = styled.div`
 
 const LegBio = styled.p``
 
-const ImageContainer = styled.div`
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  flex-basis: auto;
-  margin-right: 20px;
-
-  @media (max-width: 768px) {
-	align-self: center;
-	margin-right: 0;
-	margin-bottom: 20px;
-}
-`
 
 const VirtualImageContainer = styled(ImageContainer)`
 align-self: center;

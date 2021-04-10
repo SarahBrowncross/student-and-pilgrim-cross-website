@@ -57,6 +57,14 @@ const Links = styled.ul`
 }
 `;
 
+const LinkDiv = styled.div`
+display: flex;
+flex-direction: row;
+@media (max-width: 568px) {
+   flex-direction: column;
+}
+`
+
 const SCAtext = styled.p`
 	font-size: 0.8em;
 	padding: 1em;
@@ -79,9 +87,14 @@ const Footer = () => (
 				<Link href="https://twitter.com/studentcross"><Twitter size={24} /></Link>
 			</Links>
 			<Links>
-				<Link href="/data-policy">Data and Privacy</Link>
-				<Link href="/safeguarding">Safeguarding</Link>
-				<Link href="/contact">Contact Us</Link>
+				<LinkDiv>
+					<Link href="/contact">Contact Us</Link>
+					<Link href="/history">Our History</Link>
+				</LinkDiv>
+				<LinkDiv>
+					<Link href="/data-policy">Data and Privacy</Link>
+					<Link href="/safeguarding">Safeguarding</Link>
+				</LinkDiv>
 			</Links>
 			<SCAtext>Student and Pilgrim Cross is supported by the <a href="/sca">Student Cross Association</a> Registered Charity number 1019313</SCAtext>
 			<Logo href='/'>S+PX</Logo>
