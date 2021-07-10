@@ -85,117 +85,16 @@ const TopImage = styled.img`
 `
 
 const Content = ({ tab }) => {
+
 	if (tab === 0) {
-		return <>
-			<TabBody>
-				<SectionLeft width={70}>
-					<Aside>
-						For 2021 we are taking the pilgrimage online with services, reflections, socials and daily activities throughout holy week
-				</Aside>
-					<Spacer size={50}></Spacer>
-					<VirtualImageContainer>
-						<TopImage src="/virtual-square.jpg" alt="people holding up candles on a video call" />
-					</VirtualImageContainer>
-					<Spacer size={30}></Spacer>
-					<LegTitle>Virtual pilgrimage</LegTitle>
-					<Subheading><p>Days: 7</p><p>Starting from: Your living room</p><p>Length: 0 miles</p> Cost: Free</Subheading>
-					<LegBio>We cannot be together in person again this year so we're building on the success of our 2020 virtual pilgrimage and taking Student and Pilgrim Cross online. Every day from Saturday 27 March to Holy Saturday we'll be hosting a daily liturgy led by one of our route groups on zoom. We'll also be broadcasting a programme of reflections offered by our pilgrims across the UK. Both are available live or to catch up on later. On Easter Sunday there will be an evening liturgy to celebrate Easter followed by our usual party - get working on your acts now!<br /><br />On top of that, some of our groups are running their own schedule of social events and liturgy during the week to keep the community spirit of Student and Pilgrim Cross alive! You can choose a leg to join in with or just sign up to the central events. Sign up to get the full schedule and links for everything, or keep reading to find out what each group is offering.</LegBio>
-					<Button href="https://docs.google.com/forms/d/e/1FAIpQLSe-inT8C5JXlI3HaByn1Phi7xhj1Q6XE9z_968u4cNbVvQeGw/viewform">Sign up as an adult</Button>
-					<Button href="https://docs.google.com/forms/d/e/1FAIpQLSdkBSF9bwryZK2zlPTlqXITCUfrjUnhNvwzAGwPmcLG_HoFiA/viewform">Sign up as a family</Button>
-					<Spacer size={20}></Spacer>
-					
-					<LegText>
-						<LegTitle>Essex</LegTitle>
-						<Spacer size={10}></Spacer>
-						<LegBio>Although we can't be trekking through the stunning Norfolk countryside this year, we're still providing a mix of prayer, services and, of course, socials! We'll have pre-recorded morning prayer every day that you can watch at the best time for you and an adapted version of our Map service where we can unite though spread across the country. We'll have plenty of evening social time, including a quiz, with night prayer each evening at 9pm. As a leg we'll be doing the Maundy Thursday service for the whole pilgrimage. We'd love to have people old and new involved, and hope what we do will give you an insight into Essex!</LegBio>
-					</LegText>
-					<Spacer size={30}></Spacer>
-					<LegText>
-						<LegTitle>Northern</LegTitle>
-						<Spacer size={10}></Spacer>
-						<LegBio>Join us for a Holy Week of community, prayer and inspiration. Northern will be meeting on zoom for liturgy and for social events. We welcome people from different church traditions, and those who are exploring faith. Typically our liturgy is fresh and creative. We hope the week will be a safe space for doubts, questions, and sharing struggles. There will also be lots of space for fun. Through the week we will gather for a quiz, a party-piece evening, and every evening for informal chat. So come and give us a try, you will be welcome.
-
-						Find out more <Link href='http://northernpilgrim.org/holyweek2021/'>here</Link>.  </LegBio>
-					</LegText>
-					<Spacer size={30}></Spacer>
-					<LegText>
-						<LegTitle>London</LegTitle>
-						<Spacer size={10}></Spacer>
-						<LegBio>London leg would like to invite you to journey with us through Holy week, and become part of a community that enjoys plenty of music, liturgy and laughter. We will virtually follow our traditional route from Epping to Walsingham, with a mixture of liturgy and socials in the evenings, and an active WhatsApp group to help get you through the time in between. You might even get some merch in the post to accompany our remote pilgrimage. </LegBio>
-					</LegText>
-					<Spacer size={30}></Spacer>
-					<LegText>
-						<LegTitle>Oxford</LegTitle>
-						<Spacer size={10}></Spacer>
-						<LegBio>Oxford will start with a Blessing of Crosses on Friday evening and a trip to our virtual pub for a quiz night.
-
-						Our regular Oxford meetings will be at 6pm, usually using the Office of Readings. We have traditional Palm Sunday activities planned and socials including 'Bible Show and Tell', Film Night, an Oxford themed quiz.
-
-						On Maundy Thursday we will share in a virtual 'Love Feast' service. On Good Friday, after the reading of the Passion we hope to meet up with fellow pilgrims from other groups, much as we would in Walsingham. During Easter weekend we will be with Student and Pilgrim Cross as a whole, with a closing gathering before our pilgrimage ends.
-					</LegBio>
-					</LegText>
-					<Spacer size={30}></Spacer>
-					<LegText>
-						<LegTitle>Midland</LegTitle>
-						<Spacer size={10}></Spacer>
-						<LegBio>Midland will be meeting virtually every day of Easter week at 8pm over Zoom for an hour of liturgy, reminiscing, and all-round Student and Pilgrim Cross jollity. There will also be a few occasions where we will have a slightly different schedule to our evening, or an extra event in the day. 
-						If you are interested in joining Midland sign up soon as places will be limited to 25 members in total, and some places will be kept for potential new walkers until closer to Holy Week. 
-					</LegBio>
-					</LegText>
-					<Spacer size={30}></Spacer>
-					<LegText>
-						<LegTitle>Wensum</LegTitle>
-						<Spacer size={10}></Spacer>
-						<LegBio>Wensum welcomes teenagers (and their parents) to a week of online pilgrimage which may involve less walking, but will give you a great feel for this lively group! We're planning on having a mix of liturgy including things such as a welcome service and running one of the pilgrimage's central liturgies. On top of this there will be plenty of socials such as kahoot quizzes and Jackbox games. We'd be glad to have you! 
-					</LegBio>
-					</LegText>
-					<Spacer size={30}></Spacer>
-					<LegText>
-						<LegTitle>Peg</LegTitle>
-						<Spacer size={10}></Spacer>
-						<LegBio>Peg is one of the family legs and we seek to enable children and parents to explore, enjoy and grow together.
-
-						In addition to Student and Pilgrim Cross liturgy and events, Peg will also have a family-orientated offering. This includes children’s liturgies and evening prayer, parents’ evening prayers and socials, as well as arts and crafts for children to do with parents in their own time.
-
-						This year, we are mindful that many children and parents will be at school or working during Holy Week, so events will be taking place at the weekends and some weekday evenings.
-
-						Please note that there will be a small charge per family to cover the costs of arts and crafts, printing and postage.
-
-					</LegBio>
-					</LegText>
-					<Spacer size={30}></Spacer>
-					<LegText>
-						<LegTitle>Wells</LegTitle>
-						<Spacer size={10}></Spacer>
-						<LegBio>Wells is mostly (but not exclusively) a group of families, usually with children ranging from babies up to early teens.
-						
-						Over this Holy Week, we are planning to provide some optional daytime activities for kids (recognising that many will be at school during Holy Week) and a short kids evening prayer each evening. We will also have adult evening prayers for Palm Sunday, Good Friday, and Holy Saturday, with some social time afterwards for those that want to stay on.
-						
-					</LegBio>
-					</LegText>
-					<Spacer size={30}></Spacer>
-					<LegText>
-						<LegTitle>Easter</LegTitle>
-						<Spacer size={10}></Spacer>
-						<LegBio>Easter will be delivering the Liturgy on Monday 29 March for the whole of Student and Pilgrim Cross.  
-
-						We are planning a service on Maundy Thursday evening for when we usually meet up with time for socialising after the service! Arrangements will be made for an A.G.M.
-					</LegBio>
-					</LegText>
-				</SectionLeft>
-
-			</TabBody>
-		</>
-	}
-	if (tab === 1) {
 		return <>
 			<TabBody>
 				<SectionLeft>
 					<Aside>
-						We have 7 routes, or legs, for adults, each with its own character and flavour. Choose the leg that appeals to you or sign up for any leg and we'll place you on one.<br/><br/>
-						<b>Student and Pilgrim Cross has gone virtual for 2021! Check our virtual tab for this year's offering.</b>
-				</Aside>
-					<Button href="https://docs.google.com/forms/d/e/1FAIpQLSe-inT8C5JXlI3HaByn1Phi7xhj1Q6XE9z_968u4cNbVvQeGw/viewform">Sign up now</Button>
+						We have 7 routes, or legs, for adults, each with its own character and flavour. Choose the leg that appeals to you or sign up for any leg and we'll place you on one.<br /><br />
+						<b>Booking will open in December 2021</b>
+					</Aside>
+					{/* <Button href="https://docs.google.com/forms/d/e/1FAIpQLSe-inT8C5JXlI3HaByn1Phi7xhj1Q6XE9z_968u4cNbVvQeGw/viewform">Sign up now</Button> */}
 				</SectionLeft>
 				<Spacer size={50}></Spacer>
 				<SectionLeft width={90}>
@@ -218,9 +117,9 @@ const Content = ({ tab }) => {
 							<LegTitle>London</LegTitle>
 							<Subheading><p>Days: 7</p><p>Length: 120 miles</p> Cost: £190 (waged)/£100 (low waged)/£60 (unwaged)</Subheading>
 							<LegBio>Mostly off-road, London’s walk will take you across flat country, beside rivers and alongside main roads.
-							Accommodation through the week varies. Often called the most luxurious walk (albeit still a challenge),
-							London offers you a shower, a night in real beds and lots of cake! Accompanied by a Catholic chaplain, our route is a great mix of Catholic, Anglican and Methodist. A musical bunch, our songs reflect the typical London Pride with many witty ditties both sacred and profane.
-</LegBio>
+								Accommodation through the week varies. Often called the most luxurious walk (albeit still a challenge),
+								London offers you a shower, a night in real beds and lots of cake! Accompanied by a Catholic chaplain, our route is a great mix of Catholic, Anglican and Methodist. A musical bunch, our songs reflect the typical London Pride with many witty ditties both sacred and profane.
+							</LegBio>
 						</LegText>
 					</LegContainer>
 					<Spacer size={30}></Spacer>
@@ -281,7 +180,7 @@ const Content = ({ tab }) => {
 							<LegTitle>Easter</LegTitle>
 							<Subheading><p>Days: 1</p><p>Length: 12 miles</p> Cost: £65 (waged)/£35 (low or unwaged)</Subheading>
 							<LegBio>Easter meet up in Walsingham on Thursday evening to celebrate Mass of the Last Supper, and walk the 12miles from Wells to Walsingham the next day. The small amount of time together does not stop us from forming great friendships, having a good sing song and time for group reflection. Walkers on Easter arrange their own accommodation and travel. The fee goes towards the cost of two main meals, the Chaplain, the GOD fund and other general expenses. This group is for everyone, from those with young children or limited mobility to work commitments, all are welcome!
-</LegBio>
+							</LegBio>
 						</LegText>
 					</LegContainer>
 					<Spacer size={30}></Spacer>
@@ -289,15 +188,15 @@ const Content = ({ tab }) => {
 			</TabBody>
 		</>
 	}
-	if (tab === 2) {
+	if (tab === 1) {
 		return <>
 			<TabBody>
 				<SectionLeft>
 					<Aside>
-						We have 4 routes, or legs, for families with children of different ages. Choose the leg that fits your family.<br/><br/>
-						<b>Student and Pilgrim Cross has gone virtual for 2021! Check our virtual tab for this year's offering.</b>
-				</Aside>
-				<Button href="https://docs.google.com/forms/d/e/1FAIpQLSdkBSF9bwryZK2zlPTlqXITCUfrjUnhNvwzAGwPmcLG_HoFiA/viewform">Sign up now</Button>
+						We have 4 routes, or legs, for families with children of different ages. Choose the leg that fits your family.<br /><br />
+						<b>Booking will open in December 2021</b>
+					</Aside>
+					{/* <Button href="https://docs.google.com/forms/d/e/1FAIpQLSdkBSF9bwryZK2zlPTlqXITCUfrjUnhNvwzAGwPmcLG_HoFiA/viewform">Sign up now</Button> */}
 				</SectionLeft>
 				<Spacer size={50}></Spacer>
 				<SectionLeft width={90}>
@@ -308,8 +207,8 @@ const Content = ({ tab }) => {
 						<LegText>
 							<LegTitle>Peg</LegTitle>
 							<Subheading><p>Days: 5</p><p>Age: all ages but primarily primary school</p> Cost: £305 (adults, children aged 14 and over),
-							£133 (children aged 3-13)</Subheading>
-							<LegBio>The oldest family leg, Peg contains all the elements of a pilgrimage with a twist. Our cross, walking distance, accommodation and liturgy is more aimed at our younger members. We spend our time doing a range of activities including crafts, egg rolling, making an Easter garden, and other child friendly activities such as swimming and go-karting (over 10’s only). Our group is mostly made up of previous Student and Pilgrim Cross walkers who now bring their own children along, but for others Peg Leg has been their first experience of Student and Pilgrim Cross.
+								£133 (children aged 3-13)</Subheading>
+							<LegBio>The oldest family leg, Peg contains all the elements of a pilgrimage with a twist. Our cross, walking distance, accommodation and liturgy is more aimed at our younger members. We spend our time doing a range of activities including crafts, egg rolling, making an Easter garden, and other child friendly activities such as swimming and go-karting (over 10’s only). Our group is mostly made up of previous Pilgrim Cross walkers who now bring their own children along, but for others Peg Leg has been their first experience of Pilgrim Cross.
 							</LegBio>
 						</LegText>
 					</LegContainer>
@@ -321,7 +220,7 @@ const Content = ({ tab }) => {
 						<LegText>
 							<LegTitle>Wells</LegTitle>
 							<Subheading><p>Days: 5</p><p>Age: all ages but primarily primary school</p> Cost: £290 (adults,£130 (children aged 3+)</Subheading>
-							<LegBio>A family pilgrimage based in Wells-next-the-Sea, we walk every day covering distances suitable for young children and three-wheel buggies. The rest of our days are filled with other activities including craft, the beach, swimming, the steam train, and Easter activities with the local Parish over the road. Our liturgy caters for everyone in your family: adult, baby, child or teenager. We enjoy many things you may expect from walking other parts of Student and Pilgrim Cross. These included, but are not limited to: the beach, local countryside, cake, beer, cheese and whisky.
+							<LegBio>A family pilgrimage based in Wells-next-the-Sea, we walk every day covering distances suitable for young children and three-wheel buggies. The rest of our days are filled with other activities including craft, the beach, swimming, the steam train, and Easter activities with the local Parish over the road. Our liturgy caters for everyone in your family: adult, baby, child or teenager. We enjoy many things you may expect from walking other parts of Pilgrim Cross. These included, but are not limited to: the beach, local countryside, cake, beer, cheese and whisky.
 							</LegBio>
 						</LegText>
 					</LegContainer>
@@ -354,6 +253,29 @@ const Content = ({ tab }) => {
 			</TabBody>
 		</>
 	}
+	if (tab === 2) {
+		return <>
+			<TabBody>
+				<SectionLeft width={70}>
+					<Aside>
+						Following the success of our virtual pilgrimage in 2020 and 2021, we are now offering a permanent vitual group.<br /><br />
+						<b>Booking will open in December 2021</b>
+					</Aside>
+					<Spacer size={50}></Spacer>
+					<VirtualImageContainer>
+						<TopImage src="/virtual-square.jpg" alt="people holding up candles on a video call" />
+					</VirtualImageContainer>
+					<Spacer size={30}></Spacer>
+					<LegTitle>Virtual pilgrimage</LegTitle>
+					<Subheading><p>Days: 7</p><p>Starting from: Your living room</p><p>Length: 0 miles</p> Cost: TBC</Subheading>
+					<LegBio>Plans for our 2022 virtual pilgrimage are still being developed so watch this space! It will most likely include daily liturgy, a programme of reflections and study, social time and, hopefully, for the Easter weekend, virtual access to our services in Walsingham.</LegBio>
+					{/* <Button href="https://docs.google.com/forms/d/e/1FAIpQLSe-inT8C5JXlI3HaByn1Phi7xhj1Q6XE9z_968u4cNbVvQeGw/viewform">Sign up as an adult</Button>
+					<Button href="https://docs.google.com/forms/d/e/1FAIpQLSdkBSF9bwryZK2zlPTlqXITCUfrjUnhNvwzAGwPmcLG_HoFiA/viewform">Sign up as a family</Button> */}
+				</SectionLeft>
+
+			</TabBody>
+		</>
+	}
 }
 
 
@@ -364,9 +286,9 @@ export default function Home() {
 		<PageContainer>
 			<Header content={'The routes to Walsingham'} src={'/legs-square.jpg'} alt={'pilgrims crossing a field'}></Header>
 			<div>
-				<Tab onClick={() => setTab(0)} active={tab === 0}>Virtual for 2021</Tab>
-				<Tab onClick={() => setTab(1)} active={tab === 1}>For Adults</Tab>
-				<Tab onClick={() => setTab(2)} active={tab === 2}>For Families</Tab>
+				<Tab onClick={() => setTab(0)} active={tab === 0}>For Adults</Tab>
+				<Tab onClick={() => setTab(1)} active={tab === 1}>For Families</Tab>
+				<Tab onClick={() => setTab(2)} active={tab === 2}>Virtual</Tab>
 			</div>
 			<Content tab={tab}></Content>
 			<Footer></Footer>

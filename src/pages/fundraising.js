@@ -22,18 +22,18 @@ export default function SCA() {
 
 			<Row>
 				<SectionLeft width={70}>
-					<Subheading>Want to help pilgrims to take part in Student and Pilgrim Cross?</Subheading>
+					<Subheading>Want to help pilgrims to take part in Pilgrim Cross?</Subheading>
 					<Subheading>Want to make regular donations to the SCA?</Subheading>
 					<Subheading>Got some ideas for fundraising?</Subheading>
 
 					<Text>
-						The Student Cross Association (SCA) encourages both one-off donations as well as regular giving in order to help support students to take part in Student and Pilgrim Cross.
+						The Student Cross Association (SCA) encourages both one-off donations as well as regular giving in order to help support students to take part in Pilgrim Cross.
 						The main methods of fundraising currently are:<br />
 					</Text>
 					<BulletList>
 						<li>
 							through individual donations
-							</li>
+						</li>
 						<li>
 							producing and selling Student Cross Association merchandise.
 						</li><br />
@@ -41,14 +41,14 @@ export default function SCA() {
 					<Text>
 						When the Association started in the 1990s, it was able to disburse only limited funds, under £500 each year. As income has grown through fundraising and donations, the SCA is now able to disburse more money through grants to legs and individual supported places. The SCA currently disburses more than £6,000 every year in grants.<br /><br />
 
-					Individual donations are the most important part of the Association's annual income - they allow the Association to plan ahead and be able to distribute a guaranteed number of grants every year. Regular donations are welcomed in the form of monthly or annual standing orders.<br /><br />
+						Individual donations are the most important part of the Association's annual income - they allow the Association to plan ahead and be able to distribute a guaranteed number of grants every year. Regular donations are welcomed in the form of monthly or annual standing orders.<br /><br />
 
-					If you would like to make a regular donation, please ask for a Regular Giving and Gift Aid form by <Link mailto="YXNzb2NpYXRpb25Ac3R1ZGVudGNyb3NzLm9yZy51aw==">emailing the SCA</Link>.
-					Please include your name, postal and email addresses and a contact phone number. Say whether you would prefer to receive a downloadable (pdf) form sent by email or a paper form sent by post.<br /><br />
+						If you would like to make a regular donation, please ask for a Regular Giving and Gift Aid form by <Link mailto="YXNzb2NpYXRpb25Ac3R1ZGVudGNyb3NzLm9yZy51aw==">emailing the SCA</Link>.
+						Please include your name, postal and email addresses and a contact phone number. Say whether you would prefer to receive a downloadable (pdf) form sent by email or a paper form sent by post.<br /><br />
 
-Gift Aid - if you are a UK taxpayer, you can help us to increase the value of your donation, at no extra cost to yourself, by completing the Gift Aid Declaration on the donation form. This will enable us to increase your donation by 28p for every £1 you give.<br /><br />
+						Gift Aid - if you are a UK taxpayer, you can help us to increase the value of your donation, at no extra cost to yourself, by completing the Gift Aid Declaration on the donation form. This will enable us to increase your donation by 28p for every £1 you give.<br /><br />
 
-If you have other ideas for fundraising, please 						<Link mailto="YXNzb2NpYXRpb25Ac3R1ZGVudGNyb3NzLm9yZy51aw==">contact the SCA</Link>.
+						If you have other ideas for fundraising, please 						<Link mailto="YXNzb2NpYXRpb25Ac3R1ZGVudGNyb3NzLm9yZy51aw==">contact the SCA</Link>.
 					</Text>
 
 					<Spacer size={50}></Spacer>

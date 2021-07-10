@@ -104,7 +104,7 @@ const NavBar = () => {
 		<>
 			<NavBarPlaceholder />
 			<NavBarBase>
-				<Logo href='/'>S+PX</Logo>
+				<Logo href='/'>PX</Logo>
 
 				<Links>
 					<Link href="/about">About</Link>

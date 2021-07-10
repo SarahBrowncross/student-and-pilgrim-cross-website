@@ -41,7 +41,7 @@ export default function Home() {
           <HomeBulletList>
             <li>routes for adults and families</li>
             <li>lengths of 1, 3, 5 or 7 days</li>
-            <li>every Easter (virtual for 2021!)</li>
+            <li>every Easter (running virtually and in person in 2022!)</li>
             <li>food and accommodation included</li>
             <li>financial help available</li>
           </HomeBulletList>
@@ -57,9 +57,9 @@ export default function Home() {
         </SectionLeft>
         <SectionRight>
           <Quote>
-            My most valued friendships were made on Student and Pilgrim Cross.
-        </Quote>
-          <Cite>- Laura, pilgrim</Cite>
+            My most valued friendships were made on Pilgrim Cross.
+          </Quote>
+          <Cite>- Laura M, pilgrim</Cite>
 
         </SectionRight>
       </Row>
@@ -69,7 +69,7 @@ export default function Home() {
         </SectionLeft>
         <SectionRight>
           <HomeAside>
-            There are <b>10 groups</b>, or legs, each starting from a different point and each with their <b>own unique character</b>
+            There are <b>11 groups</b>, or legs, each starting from a different point and each with their <b>own unique character</b>
           </HomeAside>
           <Button href='/legs' >
             Choose a Group

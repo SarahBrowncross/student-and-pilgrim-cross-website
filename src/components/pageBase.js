@@ -66,13 +66,13 @@ export default function PageBase({ children, title }) {
 	return (
 		<>
 			<Helmet>
-				<title>Student and Pilgrim Cross - {title}</title>
+				<title>Pilgrim Cross - {title}</title>
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@600&display=swap" rel="stylesheet" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,600&display=swap" rel="stylesheet" />
-				<meta name="description" content="offical website of Student and Pilgrim Cross, the Easter cross-carrying pilgrimage to Walsingham" />
-				<meta name="keywords" title="keywords" content="pilgrimage, Easter, Student Cross, Pilgrim Cross, Student and Pilgrim Cross, Walsingham, Lent, Holy Week, East Anglia, Norfolk, Christian festivals, university students" />
+				<meta name="description" content="offical website of Pilgrim Cross, the Easter cross-carrying pilgrimage to Walsingham" />
+				<meta name="keywords" title="keywords" content="pilgrimage, Easter, Student Cross, Pilgrim Cross, Pilgrim Cross, Walsingham, Lent, Holy Week, East Anglia, Norfolk, Christian festivals, university students" />
 				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 				<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 				<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />

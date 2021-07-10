@@ -66,18 +66,30 @@ const RowClipContainer = styled.div`
 
 const MainHeader = styled.h1`
   font-family: 'Expletus Sans', cursive;
-  font-size: 3em;
+  font-size: 4em;
   line-height: 1em;
-  margin-bottom: 0.8em;
+  
 
   @media (max-width: 768px) {
-  padding: 15px;
+  padding: 0px 15px;
   margin-bottom: 0;
+  }
+`
+
+const Former = styled.p`
+margin-bottom: 1.5em;
+
+@media (max-width: 768px) {
+  padding: 0px 15px;
   }
 `
 
 const MainHeaderRed = styled.div`
   color: ${({ theme }) => theme.red};
+`
+
+const MainHeaderIndent = styled.div`
+margin-left: 1.5em;
 `
 
 const Tagline = styled.h2`
@@ -86,6 +98,7 @@ const Tagline = styled.h2`
   color: rgba(0, 0, 0, 0.8);
 
   @media (max-width: 768px) {
+  font-size: 1.4em;
   padding: 15px;
   margin-bottom: 0;
   line-height: 1.5em;
@@ -97,7 +110,8 @@ export default function MainPageHeader({ pink, content, src }) {
     <RowClipContainer>
       <HeaderRow pink={pink}>
         <HeaderSectionLeft>
-          <MainHeader>Student <MainHeaderRed>and Pilgrim </MainHeaderRed>Cross</MainHeader>
+          <MainHeader><MainHeaderRed>Pilgrim</MainHeaderRed><MainHeaderIndent>Cross</MainHeaderIndent></MainHeader>
+          <Former>Formerly known as Student Cross</Former>
           <Tagline>{content}</Tagline>
           <Button href='/legs'>Walk with us</Button>
         </HeaderSectionLeft>

@@ -96,8 +96,8 @@ const Footer = () => (
 					<Link href="/safeguarding">Safeguarding</Link>
 				</LinkDiv>
 			</Links>
-			<SCAtext>Student and Pilgrim Cross is supported by the <a href="/sca">Student Cross Association</a> Registered Charity number 1019313</SCAtext>
-			<Logo href='/'>S+PX</Logo>
+			<SCAtext>Pilgrim Cross is supported by the <a href="/sca">Student Cross Association</a> Registered Charity number 1019313</SCAtext>
+			<Logo href='/'>PX</Logo>
 		</FooterBase>
 	</>
 )
