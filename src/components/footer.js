@@ -82,9 +82,9 @@ const Footer = () => (
 	<>
 		<FooterBase>
 			<Links>
-				<Link href="https://www.instagram.com/student_cross/"><Instagram size={24} /></Link>
-				<Link href="https://www.facebook.com/studentcross"><Facebook size={24} /></Link>
-				<Link href="https://twitter.com/studentcross"><Twitter size={24} /></Link>
+				<Link href="https://www.instagram.com/pilgrimcross/"><Instagram size={24} /></Link>
+				<Link href="https://www.facebook.com/pilgrimcross"><Facebook size={24} /></Link>
+				<Link href="https://twitter.com/pilgrimcross"><Twitter size={24} /></Link>
 			</Links>
 			<Links>
 				<LinkDiv>

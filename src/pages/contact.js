@@ -34,8 +34,8 @@ export default function Contact() {
 					<Spacer size={'50'}></Spacer>
 					<Heading>Contacts</Heading>
 					<Name><Link mailto="aW5mb0BzdHVkZW50Y3Jvc3Mub3JnLnVr">General information</Link></Name>
-					<Name><Link mailto="Y28tb3JkaW5hdG9yQHN0dWRlbnRjcm9zcy5vcmcudWs=">National director</Link> - Craig Ince</Name>
-					<Name><Link mailto="bXVzaWNAc3R1ZGVudGNyb3NzLm9yZy51aw==">Music director</Link> - Naomi Awre</Name>
+					<Name><Link mailto="Y28tb3JkaW5hdG9yQHN0dWRlbnRjcm9zcy5vcmcudWs=">National director</Link> - Benedict Brien</Name>
+					<Name><Link mailto="bXVzaWNAc3R1ZGVudGNyb3NzLm9yZy51aw==">Music director</Link> - Neville Yee</Name>
 					<Name><Link mailto="aW5mb0BzdHVkZW50Y3Jvc3Mub3JnLnVr">Recruitment director</Link> - Laura Mitcham</Name>
 					<Name><Link mailto="bGl0dXJneUBzdHVkZW50Y3Jvc3Mub3JnLnVr">Liturgy chair</Link> - Claire Brennan</Name>
 					<Name><Link mailto="YXNzb2NpYXRpb25Ac3R1ZGVudGNyb3NzLm9yZy51aw==">Student Cross Association Chair</Link> - Jonathan Riley</Name>

@@ -14,7 +14,6 @@ import ImageContainer from "../components/imageContainer";
 const TimelineContainer = styled.div`
   display: flex;
   align-items: center;
-}
 `
 
 const TimelineImageContainer = styled(ImageContainer)`
