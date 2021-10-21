@@ -151,7 +151,7 @@ export default function SCA() {
 					<Text>
 						Jonathan Riley (Chair)<br />
 						Clare Byrne (Treasurer)<br />
-						Craig Ince (National Director 2020-21)
+						Benedict Brien (National Director 2021-22)
 					</Text>
 					<Subheading>Our patrons</Subheading>
 					<Text>
