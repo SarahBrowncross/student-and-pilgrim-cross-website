@@ -12,7 +12,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "aws s3 sync ./public s3://studentpilgrimcross.org --delete"
+    "deploy": "aws s3 sync ./public s3://studentpilgrimcross.org --delete",
+    "deploy-test": "aws s3 sync ./public s3://pilgrimcrosstestbucket --delete"
   },
   "dependencies": {
     "@styled-icons/boxicons-logos": "^10.23.0",

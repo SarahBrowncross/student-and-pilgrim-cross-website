@@ -203,7 +203,7 @@ const Content = ({ tab }) => {
 								<BadgeRound><BadgeImage src="/3-footprints.png" alt="large amount of walking" title="large amount of walking" /></BadgeRound>
 								<BadgeSquare><BadgeImage src="/7-days.png" alt="7 days of walking" title="7 days of walking" /></BadgeSquare>
 							</BadgeContainer>
-							<LegBio>The Oxford route is a bit like our journey with Christ - it may not be the most direct, but we get there in the end! We walk on tracks and country lanes, carrying our Cross. Usually around two thirds of our ecumenical group are students and young adults. On the road we sing, talk and pray; each day we also spend about an hour in silent reflection whilst we walk through beautiful countrysideh <b>In 2022:</b>
+							<LegBio>The Oxford route is a bit like our journey with Christ - it may not be the most direct, but we get there in the end! We walk on tracks and country lanes, carrying our Cross. Usually around two thirds of our ecumenical group are students and young adults. On the road we sing, talk and pray; each day we also spend about an hour in silent reflection whilst we walk through beautiful countryside <b>In 2022:</b> we'll be walking a new route along the Walsingham way.
 							</LegBio>
 						</LegText>
 					</LegContainer>
