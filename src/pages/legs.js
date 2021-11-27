@@ -14,58 +14,76 @@ import ImageContainer from "../components/imageContainer"
 import { BadgeContainer, BadgeRound, BadgeImage, BadgeSquare } from "../components/badges";
 
 const Tab = styled.button`
-width: 200px;
-position: relative;
-display: inline-block;
-padding: 15px 15px 15px;
-border: 1px solid rgba(0, 0, 0, 0.2);;
-border-bottom: 0;
-cursor: pointer;
-font-weight: 400;
-background: ${({ theme, active }) => active ? theme.pink : 'white'};
+  width: 200px;
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 400;
+  background: ${({ theme, active }) => active ? theme.pink : 'white'};
 
-:focus {
-	outline: none;
-}
+  :focus {
+    outline: none;
+  }
 
-@media (max-width: 963px) {
-	width: 150px;
-}
+  @media (max-width: 963px) {
+    width: 150px;
+  }
 
-@media (max-width: 768px) {
-	width: 33%;
-	font-size: 0.8em;
-}
+  @media (max-width: 768px) {
+    width: 33%;
+    font-size: 0.8em;
+  }
 
-@media (max-width: 568px) {
-	padding: 10px 5px 10px;
-}
+  @media (max-width: 568px) {
+    padding: 10px 5px 10px;
+  }
 `
 
 const TabBody = styled.section`
-background: ${({ theme }) => theme.pink};
-display: flex;
-flex-direction: column;
-align-items: stretch;
-min-height: 100vh;
-padding: 50px;
+  background: ${({ theme }) => theme.pink};
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+  padding: 50px;
 
-@media (max-width: 768px) {
-	padding: 20px ;
-}
+  @media (max-width: 768px) {
+    padding: 20px ;
+  }
 `
 
 const LegContainer = styled.div`
   display: flex;
 
   @media (max-width: 768px) {
-	flex-direction: column;
-}
+    flex-direction: column;
+  }
 `
+
+const KeyContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+
+const KeySection = styled.dl`
+  display: flex;
+  flex-direction: column;
+`
+const KeyElement = styled.dt``
+const KeyDefinition = styled.dd``
+
 const LegTitle = styled(Heading)`
-@media (max-width: 768px) {
-	align-self: center;
-}
+  @media (max-width: 768px) {
+    align-self: center;
+  }
 `
 
 const LegText = styled.div`
@@ -78,7 +96,7 @@ const LegBio = styled.p``
 
 
 const VirtualImageContainer = styled(ImageContainer)`
-align-self: center;
+  align-self: center;
 `
 
 const TopImage = styled.img`
@@ -369,6 +387,44 @@ export default function Home() {
           <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfbTbI3Ebl_JASyQTwJ0-pBn2QB166MHWBzJ9ZwXId9sqIO5Q/viewform?usp=sf_link">Sign up as an adult</Button>
           <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfjRJvSdPyYGiztFQZcjt6lToqSBs5m0xthuHgnWv6Y4v0zSA/viewform?usp=sf_link">Sign up as a family</Button>
           <Spacer size={10}></Spacer>
+          <KeyContainer>
+            <KeySection>
+              <KeyElement><BadgeRound><BadgeImage src="/no_cross.jpg" alt="does not carry a cross" title="not carrying a cross" /></BadgeRound></KeyElement>
+              <KeyDefinition>not carrying a cross</KeyDefinition>
+              <KeyElement><BadgeRound><BadgeImage src="/1-person-cross.png" alt="carries a small cross" title="carries a small cross" /></BadgeRound></KeyElement>
+              <KeyDefinition>carries a small cross</KeyDefinition>
+              <KeyElement><BadgeSquare><BadgeImage src="/3-person-cross.png" alt="carries a large cross" title="carries a large cross" /></BadgeSquare></KeyElement>
+              <KeyDefinition>carries a large cross</KeyDefinition>
+            </KeySection>
+            <KeySection>
+              <KeyElement><BadgeRound><BadgeImage src="/ecumenical.png" alt="ecumenical liturgy" title="ecumenical liturgy" /></BadgeRound></KeyElement>
+              <KeyDefinition>ecumenical liturgy</KeyDefinition>
+              <KeyElement><BadgeRound><BadgeImage src="/pope-hat.png" alt="mostly Catholic liturgy" title="mostly Catholic liturgy" /></BadgeRound></KeyElement>
+              <KeyDefinition>mostly Catholic liturgy</KeyDefinition>
+            </KeySection>
+            <KeySection>
+              <KeyElement><BadgeSquare><BadgeImage src="/1-day.png" alt="1 day of walking" title="1 day of pilgrimage" /></BadgeSquare></KeyElement>
+              <KeyDefinition>1 day of pilgrimage</KeyDefinition>
+              <KeyElement><BadgeSquare><BadgeImage src="/3-days.png" alt="3 days of walking" title="3 days of pilgrimage" /></BadgeSquare></KeyElement>
+              <KeyDefinition>3 days of pilgrimage</KeyDefinition>
+              <KeyElement><BadgeSquare><BadgeImage src="/5-days.jpg" alt="5 days of walking" title="5 days of pilgrimage" /></BadgeSquare></KeyElement>
+              <KeyDefinition>5 days of pilgrimage</KeyDefinition>
+              <KeyElement><BadgeSquare><BadgeImage src="/7-days.png" alt="7 days of walking" title="7 days of pilgrimage" /></BadgeSquare></KeyElement>
+              <KeyDefinition>7 days of pilgrimage</KeyDefinition>
+            </KeySection>
+            <KeySection>
+              <KeyElement><BadgeRound><BadgeImage src="/1-footprint.png" alt="small amount of walking" title="small amount of walking" /></BadgeRound></KeyElement>
+              <KeyDefinition>small amount of walking</KeyDefinition>
+              <KeyElement><BadgeRound><BadgeImage src="/2-footprints.png" alt="moderate amount of walking" title="moderate amount of walking" /></BadgeRound></KeyElement>
+              <KeyDefinition>moderate amount of walking</KeyDefinition>
+              <KeyElement><BadgeRound><BadgeImage src="/3-footprints.png" alt="large amount of walking" title="large amount of walking" /></BadgeRound></KeyElement>
+              <KeyDefinition>large amount of walking</KeyDefinition>
+            </KeySection>
+            <KeySection>
+              <KeyElement><BadgeRound><BadgeImage src="/lgbt.jpg" alt="explicitly welcoming to LGBTQ+" title="explicitly welcoming to LGBTQ+" /></BadgeRound></KeyElement>
+              <KeyDefinition>explicitly welcoming to LGBTQ+</KeyDefinition>
+            </KeySection>
+          </KeyContainer>
         </SectionLeft>
       </Row>
       <div>
