@@ -41,7 +41,7 @@ export default function SCA() {
 						</li><br />
 					</BulletList>
 					<Text>
-						These categories would equate to the fully waged, low waged and unwaged categories in the non-family, adult-only legs.<br /><br />
+						These categories would equate to the fully waged, low waged and unwaged categories in the non-family, adult-only legs. For Easter 2022, the SCA grants are £45 per adult and £30 per child in Category 2 families, £85 per adult and £50 per child in Category 3 families.<br /><br />
 
 						There will be always be families who are close to the borders of these categories and there is an element of discretion and trust that the SCA allows. The SCA Treasurer is available to talk to if a family is really struggling to decide into which category they fit.<br /><br />
 

@@ -81,13 +81,13 @@ export default function Contact() {
 
 					<Subheading>5. Online video-conference meetings</Subheading>
 
-					<Text>Pilgrim Cross and the SCA periodically host online meetings via third-party video conferencing tools. Some of these meetings are recorded for catch-up or publicity purposes. Examples of online meetings include organisational committees, general meetings, liturgies and other pilgrimage activities.<br /><br />
+					<Text>Some footage of Easter services in Walsingham may be privately live-streamed to registered, virtual pilgrims. Some readers and volunteers may choose to opt into the streaming, otherwise pilgrims will not be on camera. Pilgrim Cross and the SCA periodically host online meetings via third-party video conferencing tools. Some of these meetings are recorded for catch-up or publicity purposes. Examples of online meetings include organisational committees, general meetings, liturgies and other pilgrimage activities.<br /><br />
 
 						Where a meeting is being recorded, the meeting host should inform participants beforehand or at the start of the meeting. Meeting attendees have the right to switch off their video, mute their microphone or leave the recorded meeting, otherwise their participation is deemed to be consent to be recorded.<br /><br />
 
 						Attendees of online meetings are also subject to the data and privacy policies of the providors of video conferencing tools used.<br /><br />
 
-						Policy version: February 2021</Text>
+						Policy version: November 2021</Text>
 				</SectionLeft>
 			</Row>
 

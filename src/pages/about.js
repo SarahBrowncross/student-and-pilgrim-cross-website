@@ -45,7 +45,7 @@ export default function About() {
 					<Answer>As long as you've got a waterproof, a sleeping bag, a mat or airbed and some trainers, you'll be alright. No specialist equipment is needed.</Answer>
 					<Spacer size={30}></Spacer>
 					<Subheading>How far is it?</Subheading>
-					<Answer>The adult legs walk around 15 to 20 miles a day. The family legs walk between 5 and 10 miles a day. It's easier than you think - there's lots of stops and walking with a group provides a great boost. Your luggage is taken in a car and if it gets too much, so are you.</Answer>
+					<Answer>The adult legs walk around 15 to 20 miles a day. The family legs walk between 5 and 10 miles a day. It's easier than you think - there's lots of stops and walking with a group provides a great boost. Your luggage is taken in a car and if it gets too much, so are you. <b>In 2022:</b> some legs have chosen to walk shorter days to make it easier to stay covid-safe. You can find out more on the <Link href="/legs">routes page</Link></Answer>
 					<Spacer size={30}></Spacer>
 					<Subheading>Do I need to be really fit?</Subheading>
 					<Answer>Many confirmed couch potatoes have completed the walk without much difficulty. However, some preparation can be helpful. As little as two weeks' preparation with simple stretches and exercises would enable you to tackle the week.</Answer>

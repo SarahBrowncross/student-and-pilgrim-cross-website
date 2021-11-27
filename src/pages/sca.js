@@ -42,7 +42,7 @@ export default function SCA() {
 					</Text>
 					<BulletList>
 						<li>
-							<b>Fixed grants:</b> These are given annually to help unwaged or low waged pilgrims. The amount is based on the funds available and subsidises the cost of the walk for unwaged/low waged pilgrims. The SCA also gives <Link href='/family-support'>grants to families</Link> who need financial help to take part in a family leg. All grants are made on behalf of qualifying pilgrims directly to their leg, allowing the leg to charge lower fees for unwaged and low-waged pilgrims.
+							<b>Fixed grants:</b> These are given annually to help unwaged or low waged pilgrims. The amount is based on the funds available and subsidises the cost of the walk for unwaged/low waged pilgrims. The SCA also gives <Link href='/family-support'>grants to families</Link> who need financial help to take part in a family leg. All grants are made on behalf of qualifying pilgrims directly to their leg, allowing the leg to charge lower fees for unwaged and low-waged pilgrims. For Easter 2022, the SCA grants are £80 for unwaged pilgrims, £45 for low waged pilgrims.
 						</li>
 						<li>
 							<b>Direct bursaries:</b> Individual pilgrims can apply for this extra bursary. It can help with things like travel costs to and from Pilgrim Cross pilgrimages, meeting the cost of equipment such as sleeping bags or waterproofs or, in special cases, meeting the total cost of the walk for students or unwaged pilgrims. If accepted, the bursary will be made on the individual pilgrim's behalf to their leg.
