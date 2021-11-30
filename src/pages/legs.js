@@ -160,6 +160,7 @@ const Content = ({ tab }) => {
               <LegTitle>London</LegTitle>
               <Subheading><p>The 'teamwork means dreamwork' leg</p><p>Starting on: Friday 8th April</p> Cost: £200 (waged)/£100 (low waged)/£60 (unwaged)</Subheading>
               <BadgeContainer>
+                <BadgeRound><BadgeImage src="/lgbt.jpg" alt="explicitly welcoming to LGBTQ+" title="explicitly welcoming to LGBTQ+" /></BadgeRound>
                 <BadgeRound><BadgeImage src="/1-person-cross.png" alt="carries a small cross" title="carries a small cross" /></BadgeRound>
                 <BadgeRound><BadgeImage src="/ecumenical.png" alt="ecumenical liturgy" title="ecumenical liturgy" /></BadgeRound>
                 <BadgeRound><BadgeImage src="/2-footprints.png" alt="moderate amount of walking" title="moderate amount of walking" /></BadgeRound>
@@ -341,7 +342,7 @@ const Content = ({ tab }) => {
             </ImageContainer>
             <LegText>
               <LegTitle>Wensum</LegTitle>
-              <Subheading><p>The 'awesome' leg</p><p>Starting on: Sunday 10th April</p><p></p> Cost: £150 (adults), £75 (children aged 12+)</Subheading>
+              <Subheading><p>The 'awesome' leg</p><p>Starting on: Sunday 10th April</p><p> Cost:</p><p> Category 1 families*: £150 (adults), £75 (children aged 12+)</p><p>Category 2 families*: £105 (adults), £45 (children aged 12+)</p><p>Category 3 families*: £65 (adults), £25 (children aged 12+)</p></Subheading>
               <BadgeContainer>
                 <BadgeSquare><BadgeImage src="/1-person-cross.png" alt="carries a small cross" title="carries a small cross" /></BadgeSquare>
                 <BadgeRound><BadgeImage src="/1-footprint.png" alt="small amount of walking" title="small amount of walking" /></BadgeRound>

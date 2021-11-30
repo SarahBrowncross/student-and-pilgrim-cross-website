@@ -69,7 +69,7 @@ export default function Home() {
         </SectionLeft>
         <SectionRight>
           <HomeAside>
-            There are <b>11 groups</b>, or legs, each starting from a different point and each with their <b>own unique character</b>
+            There are <b>12 groups</b>, or legs, each starting from a different point and each with their <b>own unique character</b>
           </HomeAside>
           <Button href='/legs' >
             Choose a Group
