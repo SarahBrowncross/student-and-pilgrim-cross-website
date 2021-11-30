@@ -42,6 +42,13 @@ const Tab = styled.button`
   }
 `
 
+const SymbolsTab = styled(Tab)`
+@media (max-width: 768px) {
+    width: 99%;
+    font-size: 0.8em;
+  }
+`
+
 const TabBody = styled.section`
   background: ${({ theme }) => theme.pink};
   display: flex;
@@ -65,8 +72,9 @@ const LegContainer = styled.div`
 
 const KeyContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
+  flex-wrap: wrap;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -76,9 +84,19 @@ const KeyContainer = styled.div`
 const KeySection = styled.dl`
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  width: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+  padding: 10px;
 `
-const KeyElement = styled.dt``
-const KeyDefinition = styled.dd``
+const KeyElement = styled.dt`
+height: 40px;
+`
+
+const KeyDefinition = styled.dd`
+margin-bottom: 10px;`
 
 const LegTitle = styled(Heading)`
   @media (max-width: 768px) {
@@ -102,7 +120,11 @@ const VirtualImageContainer = styled(ImageContainer)`
 const TopImage = styled.img`
   height: 200px;
 `
-
+const ButtonDiv = styled.div`
+display: flex;
+justify-content: space-between;
+width: 100%;
+`
 
 
 const Content = ({ tab }) => {
@@ -221,7 +243,7 @@ const Content = ({ tab }) => {
                 <BadgeRound><BadgeImage src="/3-footprints.png" alt="large amount of walking" title="large amount of walking" /></BadgeRound>
                 <BadgeSquare><BadgeImage src="/7-days.png" alt="7 days of walking" title="7 days of walking" /></BadgeSquare>
               </BadgeContainer>
-              <LegBio>The Oxford route is a bit like our journey with Christ - it may not be the most direct, but we get there in the end! We walk on tracks and country lanes, carrying our Cross. Usually around two thirds of our ecumenical group are students and young adults. On the road we sing, talk and pray; each day we also spend about an hour in silent reflection whilst we walk through beautiful countryside <b>In 2022:</b> we'll be walking a new route along the Walsingham way.
+              <LegBio>The Oxford route is a bit like our journey with Christ - it may not be the most direct, but we get there in the end! We walk on tracks and country lanes, carrying our Cross. Usually around two thirds of our ecumenical group are students and young adults. On the road we sing, talk and pray; each day we also spend about an hour in silent reflection whilst we walk through beautiful countryside <b>In 2022:</b> we have a new, shorter route. We have routed away from busier roads and will be following the entirety of the Walsingham Way.
               </LegBio>
             </LegText>
           </LegContainer>
@@ -281,11 +303,11 @@ const Content = ({ tab }) => {
               <LegTitle>Wells</LegTitle>
               <Subheading><p>The 'community' leg</p><p>Starting on: Sunday 10th April</p><p>Cost:</p><p> Category 1 families*: £360 (adults), £180 (children aged 3+)</p><p>Category 2 families*: £315 (adults), £150 (children aged 3+)</p><p>Category 3 families*: £275 (adults), £130 (children aged 3+)</p><p>Children under 3 are free</p></Subheading>
               <BadgeContainer>
-                <BadgeSquare><BadgeImage src="/1-person-cross.png" alt="carries a small cross" /></BadgeSquare>
-                <BadgeRound><BadgeImage src="/1-footprint.png" alt="small amount of walking" /></BadgeRound>
-                <BadgeRound><BadgeImage src="/pope-hat.png" alt="mostly Catholic liturgy" /></BadgeRound>
-                <BadgeRound><BadgeImage src="/0+.jpg" alt="all ages welcome" /></BadgeRound>
-                <BadgeSquare><BadgeImage src="/5-days.jpg" alt="5 days of walking" /></BadgeSquare>
+                <BadgeSquare><BadgeImage src="/1-person-cross.png" alt="carries a small cross" title="carries a small cross" /></BadgeSquare>
+                <BadgeRound><BadgeImage src="/1-footprint.png" alt="small amount of walking" title="small amount of walking" /></BadgeRound>
+                <BadgeRound><BadgeImage src="/ecumenical.png" alt="ecumenical liturgy" title="ecumenical liturgy" /></BadgeRound>
+                <BadgeRound><BadgeImage src="/0+.jpg" alt="all ages welcome" title="all ages welcome" /></BadgeRound>
+                <BadgeSquare><BadgeImage src="/5-days.jpg" alt="5 days of walking" title="5 days of walking" /></BadgeSquare>
               </BadgeContainer>
               <LegBio>Wells is a group for families bringing everyone together in fellowship. Based in Wells-next-the-Sea, we walk every day covering distances suitable for young children and three-wheel buggies. The rest of our days are filled with other activities including craft, the beach, swimming, the steam train, and Easter activities with the local Parish over the road. Our liturgy caters for everyone from the smallest children to adults – not always in the same service! We enjoy many things you may expect from walking other parts of Pilgrim Cross. These include, but are not limited to: the beach, local countryside, cake, beer, cheese and whisky. <b>In 2022:</b> We are hoping for the same as previous years: walking, chatting, playing, praying and worshipping together.
               </LegBio>
@@ -343,7 +365,7 @@ const Content = ({ tab }) => {
       <TabBody>
         <SectionLeft width={70}>
           <Aside>
-            Following the success of our virtual pilgrimage in 2020 and 2021, we are now offering a permanent virtual group.<br /><br />
+            Born of the pandemic lockdown, X leg draws inspiration from the virtual communities which replaced the usual walking legs of Pilgrim Cross during the restrictions. <br /><br />Having had such creative, inspiring and supportive experiences (and a lot of fun and holiness!) during Holy Week 2020 and 2021, we want to continue to offer that opportunity to be part of the Pilgrim Cross community to those who, for whatever reason, are unable to join the walking legs of the pilgrimage in person. <br /><br />
 
           </Aside>
           <Spacer size={50}></Spacer>
@@ -360,33 +382,19 @@ const Content = ({ tab }) => {
             <BadgeSquare><BadgeImage src="/7-days.png" alt="7 days of walking" title="7 days of pilgrimage" /></BadgeSquare>
           </BadgeContainer>
           <LegBio>Be a pioneer! Meet and make exciting new friends! Taste pilgrimage from the comfort of your arm chair! If you would like to throw yourself into the Pilgrim Cross pilgrimage but cannot commit to 120 miles of walking across the rugged English countryside then X leg is for you.  We include international pilgrims, pilgrims with limited mobility, pilgrims with caring responsibilities, and pilgrims who have occasional work commitments during the week. We make our liturgy together and we welcome those of different Christian traditions and those who are open to exploring. We positively embrace diversity, use inclusive language in our liturgy and would like contributions from pilgrims which help to make them feel comfortable in the leg.</LegBio>
-          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfbTbI3Ebl_JASyQTwJ0-pBn2QB166MHWBzJ9ZwXId9sqIO5Q/viewform?usp=sf_link">Sign up now</Button>
+          <ButtonDiv>
+            <Button href="https://docs.google.com/document/d/144RJkvHHXdDCJFi68_Un4NJCCo3KQK6h5uJmX33IlSs/edit">Find out more</Button>
+            <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfbTbI3Ebl_JASyQTwJ0-pBn2QB166MHWBzJ9ZwXId9sqIO5Q/viewform?usp=sf_link">Sign up now</Button>
+          </ButtonDiv>
         </SectionLeft>
 
       </TabBody>
     </>
   }
-}
-
-
-
-export default function Home() {
-  const [tab, setTab] = useState(0);
-  return <PageBase title="routes">
-    <PageContainer>
-      <Header content={'Pilgrim Cross 2022: Hands, Face and Holy Space'} src={'/legs-square.jpg'} alt={'pilgrims crossing a field'}></Header>
-      <Row>
-        <SectionLeft width={70}>
-          <Aside>
-            <p>Pilgrim Cross is on the road again in 2022! Our twelve groups, or legs, will meet around the country in the week before Easter and make their way to Walsingham to arrive on Good Friday (15th April). We'll spend an amazing weekend celebrating Easter in the ruins of Walsingham Abbey before heading home on Easter Sunday (17th April).</p><br />
-
-            <p>Our groups are making some changes this year to stay covid-safe: walking shorter distances, changing the crosses they carry to reduce contact and putting hygiene measures in place. You can read about what each group is doing below.</p>
-            <br />
-            <p>Each group has its own character and flavour. Choose the one that appeals to you or sign up for any leg and we'll place you on one.</p>
-          </Aside>
-          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfbTbI3Ebl_JASyQTwJ0-pBn2QB166MHWBzJ9ZwXId9sqIO5Q/viewform?usp=sf_link">Sign up as an adult</Button>
-          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfjRJvSdPyYGiztFQZcjt6lToqSBs5m0xthuHgnWv6Y4v0zSA/viewform?usp=sf_link">Sign up as a family</Button>
-          <Spacer size={10}></Spacer>
+  if (tab === 3) {
+    return <>
+      <TabBody>
+        <SectionLeft width={100}>
           <KeyContainer>
             <KeySection>
               <KeyElement><BadgeRound><BadgeImage src="/no_cross.jpg" alt="does not carry a cross" title="not carrying a cross" /></BadgeRound></KeyElement>
@@ -426,11 +434,39 @@ export default function Home() {
             </KeySection>
           </KeyContainer>
         </SectionLeft>
+
+      </TabBody>
+    </>
+  }
+}
+
+
+
+export default function Home() {
+  const [tab, setTab] = useState(0);
+  return <PageBase title="routes">
+    <PageContainer>
+      <Header content={'Pilgrim Cross 2022: Hands, Face and Holy Space'} src={'/legs-square.jpg'} alt={'pilgrims crossing a field'}></Header>
+      <Row>
+        <SectionLeft width={70}>
+          <Aside>
+            <p>Pilgrim Cross is on the road again in 2022! Our twelve groups, or legs, will meet around the country in the week before Easter and make their way to Walsingham to arrive on Good Friday (15th April). We'll spend an amazing weekend celebrating Easter in the ruins of Walsingham Abbey before heading home on Easter Sunday (17th April).</p><br />
+
+            <p>Our groups are making some changes this year to stay covid-safe: walking shorter distances, changing the crosses they carry to reduce contact and putting hygiene measures in place. You can read about what each group is doing below.</p>
+            <br />
+            <p>Each group has its own character and flavour. Choose the one that appeals to you or sign up for any leg and we'll place you on one.</p>
+          </Aside>
+          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfbTbI3Ebl_JASyQTwJ0-pBn2QB166MHWBzJ9ZwXId9sqIO5Q/viewform?usp=sf_link">Sign up as an adult</Button>
+          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfjRJvSdPyYGiztFQZcjt6lToqSBs5m0xthuHgnWv6Y4v0zSA/viewform?usp=sf_link">Sign up as a family</Button>
+          <Spacer size={10}></Spacer>
+
+        </SectionLeft>
       </Row>
       <div>
         <Tab onClick={() => setTab(0)} active={tab === 0}>For Adults</Tab>
         <Tab onClick={() => setTab(1)} active={tab === 1}>For Families</Tab>
         <Tab onClick={() => setTab(2)} active={tab === 2}>Virtual</Tab>
+        <SymbolsTab onClick={() => setTab(3)} active={tab === 3}>Key of Symbols</SymbolsTab>
       </div>
       <Content tab={tab}></Content>
       <Footer></Footer>

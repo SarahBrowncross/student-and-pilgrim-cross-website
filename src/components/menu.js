@@ -54,7 +54,7 @@ const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
       <Link href="/about">About</Link>
-      <Link href="/legs">Routes</Link>
+      <Link href="/legs">2022</Link>
       <Link href="/sca">Bursaries</Link>
       <Link href="/news">News</Link>
       <CTA href="/legs">Walk with us</CTA>

@@ -71,10 +71,10 @@ export default function SCA() {
 					</BulletList>
 					<Text>The Chair and Vice-Chair of the Committee are elected by the SCA Committee from within its own body every three years. The Secretary of the Committee is elected by the SCA Committee from within its own body every five years. The Treasurer and Secretary are elected by the SCA committee every five years. Leg Reps are elected by their individual Legs every year. OEMs and Trustees are elected by the general body of Pilgrim Cross at the SCA AGM.</Text>
 					<Subheading>SCA Officers</Subheading>
-					<Text>Chair: Jonathan Riley (elected to 2021)<br />
-						Vice-Chair: Andrew Wilson (elected to 2021)<br />
+					<Text>Chair: Jonathan Riley (elected to 2022)<br />
+						Vice-Chair: Craig Ince (elected to 2022)<br />
 						Treasurer: Clare Byrne (elected to 2024)<br />
-						Secretary: Michele Crawford (elected to 2021)</Text>
+						Secretary: Michele Crawford (elected to 2026)</Text>
 					<Subheading>How can someone join the SCA Committee?</Subheading>
 					<Text>
 						Anyone with an interest in or expertise in fundraising, marketing, merchandising, design or volunteering for charity might like to consider serving on the SCA Committee. There are two main ways to serve on the SCA Committee:
