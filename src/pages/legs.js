@@ -201,7 +201,8 @@ const Content = ({ tab }) => {
               <LegTitle>Essex</LegTitle>
               <Subheading><p>The 'ice cream' leg</p><p>Starting on: Friday 8th April</p> Cost: £175 (waged)/£100 (low waged)/£55 (unwaged)</Subheading>
               <BadgeContainer>
-                <BadgeSquare><BadgeImage src="/3-person-cross.png" alt="carries a large cross" title="carries a large cross" /></BadgeSquare>
+                <BadgeRound><BadgeImage src="/lgbt.jpg" alt="explicitly welcoming to LGBTQ+" title="explicitly welcoming to LGBTQ+" /></BadgeRound>
+                <BadgeRound><BadgeImage src="/no_cross.jpg" alt="does not carry a cross" title="not carrying a cross this year" /></BadgeRound>
                 <BadgeRound><BadgeImage src="/ecumenical.png" alt="ecumenical liturgy" title="ecumenical liturgy" /></BadgeRound>
                 <BadgeRound><BadgeImage src="/3-footprints.png" alt="large amount of walking" title="large amount of walking" /></BadgeRound>
                 <BadgeSquare><BadgeImage src="/7-days.png" alt="7 days of walking" title="7 days of walking" /></BadgeSquare>
@@ -218,11 +219,12 @@ const Content = ({ tab }) => {
             </ImageContainer>
             <LegText>
               <LegTitle>Kettering</LegTitle>
-              <Subheading><p>The 'students and young adults' leg</p> <p>Starting on: Friday 8th April</p>Cost: £140 (waged)/£80 (low waged)/£50 (unwaged)</Subheading>
+              <Subheading><p>The 'students and young adults' leg</p> <p>Starting on: Saturday 9th April</p>Cost: £140 (waged)/£80 (low waged)/£50 (unwaged)</Subheading>
               <BadgeContainer>
-                <BadgeSquare><BadgeImage src="/3-person-cross.png" alt="carries a large cross" title="carries a large cross" /></BadgeSquare>
+                <BadgeRound><BadgeImage src="/1-person-cross.png" alt="carries a small cross" title="carries a small cross" /></BadgeRound>
                 <BadgeRound><BadgeImage src="/pope-hat.png" alt="mostly Catholic liturgy" title="mostly Catholic liturgy" /></BadgeRound>
                 <BadgeRound><BadgeImage src="/2-footprints.png" alt="moderate amount of walking" title="moderate amount of walking" /></BadgeRound>
+                <BadgeRound><BadgeImage src="/lgbt.jpg" alt="explicitly welcoming to LGBTQ+" title="explicitly welcoming to LGBTQ+" /></BadgeRound>
                 <BadgeSquare><BadgeImage src="/7-days.png" alt="7 days of walking" title="7 days of walking" /></BadgeSquare>
               </BadgeContainer>
               <LegBio>Kettering walks through three counties- Northamptonshire, Cambridgeshire and Norfolk, taking in beautiful villages and long stretches of fen. All along the way, communities welcome us as we pass through. The variety of what we see on our way complements our liturgy which is organised daily by different members of the group and develops organically as our community does. We have a Catholic chaplain and celebrate Mass several times during the week. Whilst we welcome pilgrims of all backgrounds we are mostly made up of students and young adults. <b>In 2022:</b> we will be walking offroad and shorter distances than usual. It will be a great taster of what Pilgrim Cross is like, and a less physically challenging introduction to the pilgrimage.
@@ -310,11 +312,11 @@ const Content = ({ tab }) => {
                 <BadgeRound><BadgeImage src="/0+.jpg" alt="all ages welcome" title="all ages welcome" /></BadgeRound>
                 <BadgeSquare><BadgeImage src="/5-days.jpg" alt="5 days of walking" title="5 days of walking" /></BadgeSquare>
               </BadgeContainer>
-              <LegBio>Wells is a group for families bringing everyone together in fellowship. Based in Wells-next-the-Sea, we walk every day covering distances suitable for young children and three-wheel buggies. The rest of our days are filled with other activities including craft, the beach, swimming, the steam train, and Easter activities with the local Parish over the road. Our liturgy caters for everyone from the smallest children to adults – not always in the same service! We enjoy many things you may expect from walking other parts of Pilgrim Cross. These include, but are not limited to: the beach, local countryside, cake, beer, cheese and whisky. <b>In 2022:</b> We are hoping for the same as previous years: walking, chatting, playing, praying and worshipping together.
+              <LegBio>Wells is a group for families bringing everyone together in fellowship. Based in Wells-next-the-Sea, we walk every day covering distances suitable for young children and three-wheel buggies. The rest of our days are filled with other activities including craft, the beach, swimming, the steam train, and Easter activities with the local Parish over the road. Our liturgy caters for everyone from the smallest children to adults – not always in the same service! We enjoy many things you may expect from walking other parts of Pilgrim Cross. These include, but are not limited to: the beach, local countryside, cake, beer, cheese and whisky. <b>In 2022:</b> We are hoping for the same as previous years: walking, chatting, playing, praying and worshipping together. <b>Wells is fully booked for 2022</b>
               </LegBio>
             </LegText>
           </LegContainer>
-          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfjRJvSdPyYGiztFQZcjt6lToqSBs5m0xthuHgnWv6Y4v0zSA/viewform?usp=sf_link">Sign up now</Button>
+
           <Spacer size={30}></Spacer>
           <LegContainer>
             <ImageContainer>
@@ -330,11 +332,10 @@ const Content = ({ tab }) => {
                 <BadgeRound><BadgeImage src="/0+.jpg" alt="all ages welcome" title="all ages welcome" /></BadgeRound>
                 <BadgeSquare><BadgeImage src="/5-days.jpg" alt="5 days of walking" title="5 days of walking" /></BadgeSquare>
               </BadgeContainer>
-              <LegBio>The oldest family leg, Peg contains all the elements of a pilgrimage with a twist. Our cross, walking distance, accommodation and liturgy are all based around the family and suitable for children of all ages. We spend our time doing a range of activities including crafts, egg rolling and making an Easter garden. The emphasis is about community. We walk, pray, eat, play and talk together, meeting old friends and making new ones. It’s a great way for children and parents to commemorate Holy Week and celebrate Easter. <b>In 2022:</b> It's business as usual for Peg this year, we're delighted to be returning to an in-person pilgrimage.
+              <LegBio>The oldest family leg, Peg contains all the elements of a pilgrimage with a twist. Our cross, walking distance, accommodation and liturgy are all based around the family and suitable for children of all ages. We spend our time doing a range of activities including crafts, egg rolling and making an Easter garden. The emphasis is about community. We walk, pray, eat, play and talk together, meeting old friends and making new ones. It’s a great way for children and parents to commemorate Holy Week and celebrate Easter. <b>In 2022:</b> It's business as usual for Peg this year, we're delighted to be returning to an in-person pilgrimage. <b>Peg is fully booked for 2022</b>
               </LegBio>
             </LegText>
           </LegContainer>
-          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfjRJvSdPyYGiztFQZcjt6lToqSBs5m0xthuHgnWv6Y4v0zSA/viewform?usp=sf_link">Sign up now</Button>
           <Spacer size={30}></Spacer>
           <LegContainer>
             <ImageContainer>
@@ -350,11 +351,10 @@ const Content = ({ tab }) => {
                 <BadgeRound><BadgeImage src="/12+.jpg" alt="for secondary school children" title="for secondary school children" /></BadgeRound>
                 <BadgeSquare><BadgeImage src="/5-days.jpg" alt="5 days of walking" title="5 days of walking" /></BadgeSquare>
               </BadgeContainer>
-              <LegBio>We're a group of families with secondary school age children: year 8 and upwards. We're a scaled down version of a Pilgrim Cross adult leg with walking, liturgy, music, humour, discussion, camaraderie, church hall floors and, most importantly, play parks. From pilgrims well-versed in the pilgrimage and their children, to new families who want to join the community, Wensum welcomes all! Wensum is a chance for teenagers to spend time together away from the usual distractions of life and for their parents/guardians to have some downtime. Cross generational friendships are formed which give a greater understanding of other viewpoints. It's a chance for adults to behave like teenagers and teenagers to be treated like adults. Our liturgy is created by the teenagers, home made, thought provoking and participatory. <b>In 2022: </b>Wensum is staying in two centres during the week, sleeping on church hall floors. We'll be walking 5 or 6 miles each day, praying and socialising and creating community.
+              <LegBio>We're a group of families with secondary school age children: year 8 and upwards. We're a scaled down version of a Pilgrim Cross adult leg with walking, liturgy, music, humour, discussion, camaraderie, church hall floors and, most importantly, play parks. From pilgrims well-versed in the pilgrimage and their children, to new families who want to join the community, Wensum welcomes all! Wensum is a chance for teenagers to spend time together away from the usual distractions of life and for their parents/guardians to have some downtime. Cross generational friendships are formed which give a greater understanding of other viewpoints. It's a chance for adults to behave like teenagers and teenagers to be treated like adults. Our liturgy is created by the teenagers, home made, thought provoking and participatory. <b>In 2022: </b>Wensum is staying in two centres during the week, sleeping on church hall floors. We'll be walking 5 or 6 miles each day, praying and socialising and creating community. <b>Wensum is fully booked for 2022</b>
               </LegBio>
             </LegText>
           </LegContainer>
-          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfjRJvSdPyYGiztFQZcjt6lToqSBs5m0xthuHgnWv6Y4v0zSA/viewform?usp=sf_link">Sign up now</Button>
           <Spacer size={30}></Spacer>
           <p>*For an explanation of the family categories, see our <Link href='/family-support'>family support</Link> page</p>
         </SectionLeft>
